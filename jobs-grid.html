@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="msapplication-TileColor" content="#0E0E0E">
+    <meta name="template-color" content="#0E0E0E">
+    <link rel="manifest" href="manifest.json" crossorigin>
+    <meta name="msapplication-config" content="browserconfig.xml">
+    <meta name="description" content="Index page">
+    <meta name="keywords" content="index, page">
+    <meta name="author" content="">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/template/briefcase.svg">
+    <link href="assets/css/style.css?version=4.1" rel="stylesheet">
+    <title>Trackify - Find Job </title>
+  </head>
+  <body>
+    <div id="preloader-active">
+      <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="preloader-inner position-relative">
+          <div id="loading" style="display:none;" class="text-center"><img src="assets/imgs/template/loading.gif" alt="jobBox"></div>
+        </div>
+      </div>
+    </div>
+
+    <header class="header sticky-bar">
+      <div class="container">
+        <div class="main-header">
+          <div class="header-left">
+            <div class="header-logo"><a class="d-flex" href="index.html"><img alt="jobBox" src="assets/imgs/template/Logo.svg"></a></div>
+          </div>
+          <div class="header-nav">
+            <nav class="nav-main-menu">
+              <ul class="main-menu">
+                <li class="has-children"><a class="active" href="index.html">Home</a>
+                </li>
+                <li class="has-children"><a href="jobs-grid.html">Find a Job</a>
+                </li>
+                <li class="has-children"><a href="page-signin.html">Recruiters</a>
+                </li>
+                <li class="has-children"><a href="page-signin.html">Candidates</a>
+                </li>
+                <li class="has-children"><a href="page-signin.html">Log out</a>
+                </li>
+                <li class="dashboard"><a href="Dashboard.html" target="_blank">Dashboard</a></li>
+              </ul>
+            </nav>
+            <div class="burger-icon burger-icon-white"><span class="burger-icon-top"></span><span class="burger-icon-mid"></span><span class="burger-icon-bottom"></span></div>
+          </div>
+          <div class="header-right">
+            <div class="block-signin">
+              
+              <div class="member-login">
+
+
+
+
+
+                <div class="info-member" style="display: flex; align-items: center;"> 
+  <img style="height: 35px; width: 35px; border-radius: 50%; margin-right: 10px;" src="assets/imgs/page/dashboard/profile.png" alt="Profile Image">
+  <div>
+<strong id="member_name" class="color-brand-1">Loading...</strong> 
+                  <div class="dropdown">
+                    <span id="member_role">Applicant</span> <!-- هنا أضفنا id="member_role" -->
+                    <ul class="dropdown-menu dropdown-menu-light dropdown-menu-end" aria-labelledby="dropdownProfile">
+                      <li><a class="dropdown-item" href="profile.html">Profiles</a></li>
+                      <li><a class="dropdown-item" href="my-resume.html">CV Manager</a></li>
+                      <li><a class="dropdown-item" href="login.html">Logout</a></li>
+                    </ul>
+                  </div>
+                </div></div>
+              </div>
+            </div>
+          </div></div>
+      </div>
+    </header>    
+    <main class="main">
+      <section class="section-box-2">
+        <div class="container">
+          <div class="banner-hero banner-single banner-single-bg">
+            <div class="block-banner text-center">
+              <h3 class="wow animate__animated animate__fadeInUp"><span class="color-brand-2">Apply</span> Now!</h3>
+              <div class="font-sm color-text-paragraph-2 mt-10 wow animate__animated animate__fadeInUp" data-wow-delay=".1s">Trackify is the best apllicant tracking system ever made, <br class="d-none d-xl-block">well.. in the future i guess.</div>
+              <div class="form-find text-start mt-40 wow animate__animated animate__fadeInUp" data-wow-delay=".2s">
+                <form>
+                  <input class="form-input input-keysearch mr-10" type="text" placeholder="Your keyword... ">
+                  <button class="btn btn-default btn-find font-sm">Search</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-box mt-30">
+        <div class="container">
+          <div class="row flex-row-reverse">
+            <div class="col-lg-9 col-md-12 col-sm-12 col-12 float-right">
+              <div class="content-page">
+                <div class="row" id="jobsContainer">
+                  <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                    <div class="card-grid-2 hover-up">
+                      <div class="card-grid-2-image-left"><span class="flash"></span>
+                        <div class="image-box"><img src="assets/imgs/brands/brand-1.png" alt="jobBox"></div>
+                        <div class="right-info"><a class="name-job" href="company-details.html">LinkedIn</a><span class="location-small">New York, US</span></div>
+                      </div>
+                      <div class="card-block-info">
+                        <h6><a href="job-details.html">UI / UX Designer fulltime</a></h6>
+                        <div class="mt-5"><span class="card-briefcase">Fulltime</span><span class="card-time">4<span> minutes ago</span></span></div>
+                        <p class="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur</p>
+                        <div class="mt-30"><a class="btn btn-grey-small mr-5" href="jobs-grid.html">Adobe XD</a><a class="btn btn-grey-small mr-5" href="jobs-grid.html">Figma</a><a class="btn btn-grey-small mr-5" href="jobs-grid.html">Photoshop</a>
+                        </div>
+                        <div class="card-2-bottom mt-30">
+                          <div class="row">
+                            <div class="col-lg-7 col-7"><span class="card-text-price">$500</span><span class="text-muted">/SAR</span></div>
+                            <div class="col-lg-5 col-5 text-end">
+                              <div class="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Apply now</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                    <div class="card-grid-2 hover-up">
+                      <div class="card-grid-2-image-left"><span class="flash"></span>
+                        <div class="image-box"><img src="assets/imgs/brands/brand-2.png" alt="jobBox"></div>
+                        <div class="right-info"><a class="name-job" href="company-details.html">Adobe Ilustrator</a><span class="location-small">New York, US</span></div>
+                      </div>
+                      <div class="card-block-info">
+                        <h6><a href="job-details.html">Full Stack Engineer</a></h6>
+                        <div class="mt-5"><span class="card-briefcase">Part time</span><span class="card-time">5<span> minutes ago</span></span></div>
+                        <p class="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur.</p>
+                        <div class="mt-30"><a class="btn btn-grey-small mr-5" href="jobs-grid.html">React</a><a class="btn btn-grey-small mr-5" href="jobs-grid.html">NodeJS</a>
+                        </div>
+                        <div class="card-2-bottom mt-30">
+                          <div class="row">
+                            <div class="col-lg-7 col-7"><span class="card-text-price">$800</span><span class="text-muted">/SAR</span></div>
+                            <div class="col-lg-5 col-5 text-end">
+                              <div class="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Apply now</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                    <div class="card-grid-2 hover-up">
+                      <div class="card-grid-2-image-left"><span class="flash"></span>
+                        <div class="image-box"><img src="assets/imgs/brands/brand-3.png" alt="jobBox"></div>
+                        <div class="right-info"><a class="name-job" href="company-details.html">Bing Search</a><span class="location-small">New York, US</span></div>
+                      </div>
+                      <div class="card-block-info">
+                        <h6><a href="job-details.html">Java Software Engineer</a></h6>
+                        <div class="mt-5"><span class="card-briefcase">Full time</span><span class="card-time">6<span> minutes ago</span></span></div>
+                        <p class="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur.</p>
+                        <div class="mt-30"><a class="btn btn-grey-small mr-5" href="jobs-grid.html">Python</a><a class="btn btn-grey-small mr-5" href="jobs-grid.html">AWS</a><a class="btn btn-grey-small mr-5" href="jobs-grid.html">Photoshop</a>
+                        </div>
+                        <div class="card-2-bottom mt-30">
+                          <div class="row">
+                            <div class="col-lg-7 col-7"><span class="card-text-price">$250</span><span class="text-muted">/SAR</span></div>
+                            <div class="col-lg-5 col-5 text-end">
+                              <div class="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Apply now</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                    <div class="card-grid-2 hover-up">
+                      <div class="card-grid-2-image-left"><span class="flash"></span>
+                        <div class="image-box"><img src="assets/imgs/brands/brand-4.png" alt="jobBox"></div>
+                        <div class="right-info"><a class="name-job" href="company-details.html">Dailymotion</a><span class="location-small">New York, US</span></div>
+                      </div>
+                      <div class="card-block-info">
+                        <h6><a href="job-details.html">Frontend Developer</a></h6>
+                        <div class="mt-5"><span class="card-briefcase">Full time</span><span class="card-time">6<span> minutes ago</span></span></div>
+                        <p class="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur.</p>
+                        <div class="mt-30"><a class="btn btn-grey-small mr-5" href="jobs-grid.html">Typescript</a><a class="btn btn-grey-small mr-5" href="jobs-grid.html">Java</a>
+                        </div>
+                        <div class="card-2-bottom mt-30">
+                          <div class="row">
+                            <div class="col-lg-7 col-7"><span class="card-text-price">$250</span><span class="text-muted">/SAR</span></div>
+                            <div class="col-lg-5 col-5 text-end">
+                              <div class="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Apply now</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                    <div class="card-grid-2 hover-up">
+                      <div class="card-grid-2-image-left"><span class="flash"></span>
+                        <div class="image-box"><img src="assets/imgs/brands/brand-5.png" alt="jobBox"></div>
+                        <div class="right-info"><a class="name-job" href="company-details.html">Linkedin</a><span class="location-small">New York, US</span></div>
+                      </div>
+                      <div class="card-block-info">
+                        <h6><a href="job-details.html">React Native Web Developer</a></h6>
+                        <div class="mt-5"><span class="card-briefcase">Fulltime</span><span class="card-time">4<span> minutes ago</span></span></div>
+                        <p class="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur</p>
+                        <div class="mt-30"><a class="btn btn-grey-small mr-5" href="jobs-grid.html">Angular</a>
+                        </div>
+                        <div class="card-2-bottom mt-30">
+                          <div class="row">
+                            <div class="col-lg-7 col-7"><span class="card-text-price">$500</span><span class="text-muted">/SAR</span></div>
+                            <div class="col-lg-5 col-5 text-end">
+                              <div class="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Apply now</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                    <div class="card-grid-2 hover-up">
+                      <div class="card-grid-2-image-left"><span class="flash"></span>
+                        <div class="image-box"><img src="assets/imgs/brands/brand-6.png" alt="jobBox"></div>
+                        <div class="right-info"><a class="name-job" href="company-details.html">Quora JSC</a><span class="location-small">New York, US</span></div>
+                      </div>
+                      <div class="card-block-info">
+                        <h6><a href="job-details.html">Senior System Engineer</a></h6>
+                        <div class="mt-5"><span class="card-briefcase">Part time</span><span class="card-time">5<span> minutes ago</span></span></div>
+                        <p class="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur.</p>
+                        <div class="mt-30"><a class="btn btn-grey-small mr-5" href="job-details.html">PHP</a><a class="btn btn-grey-small mr-5" href="job-details.html">Android</a>
+                        </div>
+                        <div class="card-2-bottom mt-30">
+                          <div class="row">
+                            <div class="col-lg-7 col-7"><span class="card-text-price">$800</span><span class="text-muted">/SAR</span></div>
+                            <div class="col-lg-5 col-5 text-end">
+                              <div class="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Apply now</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                    <div class="card-grid-2 hover-up">
+                      <div class="card-grid-2-image-left"><span class="flash"></span>
+                        <div class="image-box"><img src="assets/imgs/brands/brand-7.png" alt="jobBox"></div>
+                        <div class="right-info"><a class="name-job" href="company-details.html">Nintendo</a><span class="location-small">New York, US</span></div>
+                      </div>
+                      <div class="card-block-info">
+                        <h6><a href="job-details.html">Products Manager</a></h6>
+                        <div class="mt-5"><span class="card-briefcase">Full time</span><span class="card-time">6<span> minutes ago</span></span></div>
+                        <p class="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur.</p>
+                        <div class="mt-30"><a class="btn btn-grey-small mr-5" href="job-details.html">ASP .Net</a><a class="btn btn-grey-small mr-5" href="job-details.html">Figma</a>
+                        </div>
+                        <div class="card-2-bottom mt-30">
+                          <div class="row">
+                            <div class="col-lg-7 col-7"><span class="card-text-price">$250</span><span class="text-muted">/SAR</span></div>
+                            <div class="col-lg-5 col-5 text-end">
+                              <div class="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Apply now</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                    <div class="card-grid-2 hover-up">
+                      <div class="card-grid-2-image-left"><span class="flash"></span>
+                        <div class="image-box"><img src="assets/imgs/brands/brand-8.png" alt="jobBox"></div>
+                        <div class="right-info"><a class="name-job" href="company-details.html">Periscope</a><span class="location-small">New York, US</span></div>
+                      </div>
+                      <div class="card-block-info">
+                        <h6><a href="job-details.html">Lead Quality Control QA</a></h6>
+                        <div class="mt-5"><span class="card-briefcase">Full time</span><span class="card-time">6<span> minutes ago</span></span></div>
+                        <p class="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur.</p>
+                        <div class="mt-30"><a class="btn btn-grey-small mr-5" href="job-details.html">iOS</a><a class="btn btn-grey-small mr-5" href="job-details.html">Laravel</a><a class="btn btn-grey-small mr-5" href="job-details.html">Golang</a>
+                        </div>
+                        <div class="card-2-bottom mt-30">
+                          <div class="row">
+                            <div class="col-lg-7 col-7"><span class="card-text-price">$250</span><span class="text-muted">/SAR</span></div>
+                            <div class="col-lg-5 col-5 text-end">
+                              <div class="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Apply now</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                    <div class="card-grid-2 hover-up">
+                      <div class="card-grid-2-image-left"><span class="flash"></span>
+                        <div class="image-box"><img src="assets/imgs/brands/brand-1.png" alt="jobBox"></div>
+                        <div class="right-info"><a class="name-job" href="company-details.html">LinkedIn</a><span class="location-small">New York, US</span></div>
+                      </div>
+                      <div class="card-block-info">
+                        <h6><a href="job-details.html">UI / UX Designer fulltime</a></h6>
+                        <div class="mt-5"><span class="card-briefcase">Fulltime</span><span class="card-time">4<span> minutes ago</span></span></div>
+                        <p class="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur</p>
+                        <div class="mt-30"><a class="btn btn-grey-small mr-5" href="jobs-grid.html">Adobe XD</a><a class="btn btn-grey-small mr-5" href="jobs-grid.html">Figma</a><a class="btn btn-grey-small mr-5" href="jobs-grid.html">Photoshop</a>
+                        </div>
+                        <div class="card-2-bottom mt-30">
+                          <div class="row">
+                            <div class="col-lg-7 col-7"><span class="card-text-price">$500</span><span class="text-muted">/SAR</span></div>
+                            <div class="col-lg-5 col-5 text-end">
+                              <div class="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Apply now</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                    <div class="card-grid-2 hover-up">
+                      <div class="card-grid-2-image-left"><span class="flash"></span>
+                        <div class="image-box"><img src="assets/imgs/brands/brand-2.png" alt="jobBox"></div>
+                        <div class="right-info"><a class="name-job" href="company-details.html">Adobe Ilustrator</a><span class="location-small">New York, US</span></div>
+                      </div>
+                      <div class="card-block-info">
+                        <h6><a href="job-details.html">Full Stack Engineer</a></h6>
+                        <div class="mt-5"><span class="card-briefcase">Part time</span><span class="card-time">5<span> minutes ago</span></span></div>
+                        <p class="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur.</p>
+                        <div class="mt-30"><a class="btn btn-grey-small mr-5" href="jobs-grid.html">React</a><a class="btn btn-grey-small mr-5" href="jobs-grid.html">NodeJS</a>
+                        </div>
+                        <div class="card-2-bottom mt-30">
+                          <div class="row">
+                            <div class="col-lg-7 col-7"><span class="card-text-price">$800</span><span class="text-muted">/SAR</span></div>
+                            <div class="col-lg-5 col-5 text-end">
+                              <div class="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Apply now</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                    <div class="card-grid-2 hover-up">
+                      <div class="card-grid-2-image-left"><span class="flash"></span>
+                        <div class="image-box"><img src="assets/imgs/brands/brand-3.png" alt="jobBox"></div>
+                        <div class="right-info"><a class="name-job" href="company-details.html">Bing Search</a><span class="location-small">New York, US</span></div>
+                      </div>
+                      <div class="card-block-info">
+                        <h6><a href="job-details.html">Java Software Engineer</a></h6>
+                        <div class="mt-5"><span class="card-briefcase">Full time</span><span class="card-time">6<span> minutes ago</span></span></div>
+                        <p class="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur.</p>
+                        <div class="mt-30"><a class="btn btn-grey-small mr-5" href="jobs-grid.html">Python</a><a class="btn btn-grey-small mr-5" href="jobs-grid.html">AWS</a><a class="btn btn-grey-small mr-5" href="jobs-grid.html">Photoshop</a>
+                        </div>
+                        <div class="card-2-bottom mt-30">
+                          <div class="row">
+                            <div class="col-lg-7 col-7"><span class="card-text-price">$250</span><span class="text-muted">/SAR</span></div>
+                            <div class="col-lg-5 col-5 text-end">
+                              <div class="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Apply now</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                    <div class="card-grid-2 hover-up">
+                      <div class="card-grid-2-image-left"><span class="flash"></span>
+                        <div class="image-box"><img src="assets/imgs/brands/brand-4.png" alt="jobBox"></div>
+                        <div class="right-info"><a class="name-job" href="company-details.html">Dailymotion</a><span class="location-small">New York, US</span></div>
+                      </div>
+                      <div class="card-block-info">
+                        <h6><a href="job-details.html">Frontend Developer</a></h6>
+                        <div class="mt-5"><span class="card-briefcase">Full time</span><span class="card-time">6<span> minutes ago</span></span></div>
+                        <p class="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur.</p>
+                        <div class="mt-30"><a class="btn btn-grey-small mr-5" href="jobs-grid.html">Typescript</a><a class="btn btn-grey-small mr-5" href="jobs-grid.html">Java</a>
+                        </div>
+                        <div class="card-2-bottom mt-30">
+                          <div class="row">
+                            <div class="col-lg-7 col-7"><span class="card-text-price">$250</span><span class="text-muted">/SAR</span></div>
+                            <div class="col-lg-5 col-5 text-end">
+                              <div class="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Apply now</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                    <div class="card-grid-2 hover-up">
+                      <div class="card-grid-2-image-left"><span class="flash"></span>
+                        <div class="image-box"><img src="assets/imgs/brands/brand-5.png" alt="jobBox"></div>
+                        <div class="right-info"><a class="name-job" href="company-details.html">Linkedin</a><span class="location-small">New York, US</span></div>
+                      </div>
+                      <div class="card-block-info">
+                        <h6><a href="job-details.html">React Native Web Developer</a></h6>
+                        <div class="mt-5"><span class="card-briefcase">Fulltime</span><span class="card-time">4<span> minutes ago</span></span></div>
+                        <p class="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur</p>
+                        <div class="mt-30"><a class="btn btn-grey-small mr-5" href="jobs-grid.html">Angular</a>
+                        </div>
+                        <div class="card-2-bottom mt-30">
+                          <div class="row">
+                            <div class="col-lg-7 col-7"><span class="card-text-price">$500</span><span class="text-muted">/SAR</span></div>
+                            <div class="col-lg-5 col-5 text-end">
+                              <div class="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Apply now</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                    <div class="card-grid-2 hover-up">
+                      <div class="card-grid-2-image-left"><span class="flash"></span>
+                        <div class="image-box"><img src="assets/imgs/brands/brand-6.png" alt="jobBox"></div>
+                        <div class="right-info"><a class="name-job" href="company-details.html">Quora JSC</a><span class="location-small">New York, US</span></div>
+                      </div>
+                      <div class="card-block-info">
+                        <h6><a href="job-details.html">Senior System Engineer</a></h6>
+                        <div class="mt-5"><span class="card-briefcase">Part time</span><span class="card-time">5<span> minutes ago</span></span></div>
+                        <p class="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur.</p>
+                        <div class="mt-30"><a class="btn btn-grey-small mr-5" href="job-details.html">PHP</a><a class="btn btn-grey-small mr-5" href="job-details.html">Android</a>
+                        </div>
+                        <div class="card-2-bottom mt-30">
+                          <div class="row">
+                            <div class="col-lg-7 col-7"><span class="card-text-price">$800</span><span class="text-muted">/SAR</span></div>
+                            <div class="col-lg-5 col-5 text-end">
+                              <div class="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Apply now</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                    <div class="card-grid-2 hover-up">
+                      <div class="card-grid-2-image-left"><span class="flash"></span>
+                        <div class="image-box"><img src="assets/imgs/brands/brand-7.png" alt="jobBox"></div>
+                        <div class="right-info"><a class="name-job" href="company-details.html">Nintendo</a><span class="location-small">New York, US</span></div>
+                      </div>
+                      <div class="card-block-info">
+                        <h6><a href="job-details.html">Products Manager</a></h6>
+                        <div class="mt-5"><span class="card-briefcase">Full time</span><span class="card-time">6<span> minutes ago</span></span></div>
+                        <p class="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur.</p>
+                        <div class="mt-30"><a class="btn btn-grey-small mr-5" href="job-details.html">ASP .Net</a><a class="btn btn-grey-small mr-5" href="job-details.html">Figma</a>
+                        </div>
+                        <div class="card-2-bottom mt-30">
+                          <div class="row">
+                            <div class="col-lg-7 col-7"><span class="card-text-price">$250</span><span class="text-muted">/SAR</span></div>
+                            <div class="col-lg-5 col-5 text-end">
+                              <div class="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Apply now</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                    <div class="card-grid-2 hover-up">
+                      <div class="card-grid-2-image-left"><span class="flash"></span>
+                        <div class="image-box"><img src="assets/imgs/brands/brand-8.png" alt="jobBox"></div>
+                        <div class="right-info"><a class="name-job" href="company-details.html">Periscope</a><span class="location-small">New York, US</span></div>
+                      </div>
+                      <div class="card-block-info">
+                        <h6><a href="job-details.html">Lead Quality Control QA</a></h6>
+                        <div class="mt-5"><span class="card-briefcase">Full time</span><span class="card-time">6<span> minutes ago</span></span></div>
+                        <p class="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur.</p>
+                        <div class="mt-30"><a class="btn btn-grey-small mr-5" href="job-details.html">iOS</a><a class="btn btn-grey-small mr-5" href="job-details.html">Laravel</a><a class="btn btn-grey-small mr-5" href="job-details.html">Golang</a>
+                        </div>
+                        <div class="card-2-bottom mt-30">
+                          <div class="row">
+                            <div class="col-lg-7 col-7"><span class="card-text-price">$250</span><span class="text-muted">/SAR</span></div>
+                            <div class="col-lg-5 col-5 text-end">
+                              <div class="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Apply now</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                    <div class="card-grid-2 hover-up">
+                      <div class="card-grid-2-image-left"><span class="flash"></span>
+                        <div class="image-box"><img src="assets/imgs/brands/brand-1.png" alt="jobBox"></div>
+                        <div class="right-info"><a class="name-job" href="company-details.html">LinkedIn</a><span class="location-small">New York, US</span></div>
+                      </div>
+                      <div class="card-block-info">
+                        <h6><a href="job-details.html">UI / UX Designer fulltime</a></h6>
+                        <div class="mt-5"><span class="card-briefcase">Fulltime</span><span class="card-time">4<span> minutes ago</span></span></div>
+                        <p class="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur</p>
+                        <div class="mt-30"><a class="btn btn-grey-small mr-5" href="jobs-grid.html">Adobe XD</a><a class="btn btn-grey-small mr-5" href="jobs-grid.html">Figma</a><a class="btn btn-grey-small mr-5" href="jobs-grid.html">Photoshop</a>
+                        </div>
+                        <div class="card-2-bottom mt-30">
+                          <div class="row">
+                            <div class="col-lg-7 col-7"><span class="card-text-price">$500</span><span class="text-muted">/SAR</span></div>
+                            <div class="col-lg-5 col-5 text-end">
+                              <div class="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Apply now</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                    <div class="card-grid-2 hover-up">
+                      <div class="card-grid-2-image-left"><span class="flash"></span>
+                        <div class="image-box"><img src="assets/imgs/brands/brand-2.png" alt="jobBox"></div>
+                        <div class="right-info"><a class="name-job" href="company-details.html">Adobe Ilustrator</a><span class="location-small">New York, US</span></div>
+                      </div>
+                      <div class="card-block-info">
+                        <h6><a href="job-details.html">Full Stack Engineer</a></h6>
+                        <div class="mt-5"><span class="card-briefcase">Part time</span><span class="card-time">5<span> minutes ago</span></span></div>
+                        <p class="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur.</p>
+                        <div class="mt-30"><a class="btn btn-grey-small mr-5" href="jobs-grid.html">React</a><a class="btn btn-grey-small mr-5" href="jobs-grid.html">NodeJS                            </a>
+                        </div>
+                        <div class="card-2-bottom mt-30">
+                          <div class="row">
+                            <div class="col-lg-7 col-7"><span class="card-text-price">$800</span><span class="text-muted">/SAR</span></div>
+                            <div class="col-lg-5 col-5 text-end">
+                              <div class="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Apply now</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-12 col-sm-12 col-12">
+              <div class="sidebar-shadow none-shadow mb-30">
+                  <div class="sidebar-filters">
+                    <div class="filter-block head-border mb-30">
+                      <h5>Advance Filter <a class="link-reset" href="#" id="resetButton">Reset</a></h5>
+                    </div>
+                    <div class="filter-block mb-30">
+                        <div class="form-group select-style select-style-icon">
+                            <select id="locationFilter" class="form-control form-icons select-active">
+                                <option value="All">All</option>
+                                <option value="Riyadh">Riyadh</option>
+                                <option value="Jeddah">Jeddah</option>
+                                <option value="Damam">Damam</option>
+                            </select><i class="fi-rr-marker"></i>
+                        </div>
+                    </div>
+                    <div class="filter-block mb-20"></div>
+                    <div class="form-group mb-20">
+                        <ul class="list-checkbox">
+                            <li>
+                                <label class="cb-container">
+                                    <input type="checkbox" class="salaryRangeFilter" value="All"><span class="text-small">All</span><span class="checkmark"></span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="cb-container">
+                                    <input type="checkbox" class="salaryRangeFilter" value="0-20000"><span class="text-small">SAR 0k - SAR 20k</span><span class="checkmark"></span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="cb-container">
+                                    <input type="checkbox" class="salaryRangeFilter" value="20000-40000"><span class="text-small">SAR 20k - SAR 40k</span><span class="checkmark"></span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="cb-container">
+                                    <input type="checkbox" class="salaryRangeFilter" value="40000-80000"><span class="text-small">SAR 40k - SAR 80k</span><span class="checkmark"></span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="cb-container">
+                                    <input type="checkbox" class="salaryRangeFilter" value="80000-100000"><span class="text-small">SAR 80k - SAR 100k</span><span class="checkmark"></span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="cb-container">
+                                    <input type="checkbox" class="salaryRangeFilter" value="100000-200000"><span class="text-small">SAR 100k - SAR 200k</span><span class="checkmark"></span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="cb-container">
+                                    <input type="checkbox" class="salaryRangeFilter" value="200000+"><span class="text-small">+200k SAR</span><span class="checkmark"></span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="filter-block mb-30">
+                        <h5 class="medium-heading mb-10">Degree</h5>
+                        <div class="form-group">
+                            <ul class="list-checkbox">
+                                <li>
+                                    <label class="cb-container">
+                                        <input type="checkbox" class="degreeFilter" value="All"><span class="text-small">All</span><span class="checkmark"></span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="cb-container">
+                                        <input type="checkbox" class="degreeFilter" value="Diploma"><span class="text-small">Diploma</span><span class="checkmark"></span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="cb-container">
+                                        <input type="checkbox" class="degreeFilter" value="Bachelor"><span class="text-small">Bachelor</span><span class="checkmark"></span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="cb-container">
+                                        <input type="checkbox" class="degreeFilter" value="Master"><span class="text-small">Master</span><span class="checkmark"></span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="cb-container">
+                                        <input type="checkbox" class="degreeFilter" value="PHD"><span class="text-small">PHD</span><span class="checkmark"></span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="filter-block mb-30">
+                        <h5 class="medium-heading mb-10">Experience Level</h5>
+                        <div class="form-group">
+                            <ul class="list-checkbox">
+                                <li>
+                                    <label class="cb-container">
+                                        <input type="checkbox" class="experienceLevelFilter" value="All"><span class="text-small">All</span><span class="checkmark"></span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="cb-container">
+                                        <input type="checkbox" class="experienceLevelFilter" value="1 - 2 years"><span class="text-small">1 - 2 years</span><span class="checkmark"></span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="cb-container">
+                                        <input type="checkbox" class="experienceLevelFilter" value="3 - 5 years"><span class="text-small">3 - 5 years</span><span class="checkmark"></span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="cb-container">
+                                        <input type="checkbox" class="experienceLevelFilter" value="6 - 8 years"><span class="text-small">6 - 8 years</span><span class="checkmark"></span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="cb-container">
+                                        <input type="checkbox" class="experienceLevelFilter" value="9 - 10 years"><span class="text-small">9 - 10 years</span><span class="checkmark"></span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="cb-container">
+                                        <input type="checkbox" class="experienceLevelFilter" value="10+ years"><span class="text-small">10+ years</span><span class="checkmark"></span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="filter-block mb-30">
+                      <h5 class="medium-heading mb-10">Speciality</h5>
+                      <div class="form-group">
+                          <ul class="list-checkbox">
+                              <li>
+                                  <label class="cb-container">
+                                      <input type="checkbox" class="specialityFilter" value="All"><span class="text-small">All</span><span class="checkmark"></span>
+                                  </label>
+                              </li>
+                              <li>
+                                  <label class="cb-container">
+                                      <input type="checkbox" class="specialityFilter" value="Computer Science"><span class="text-small">Computer Science</span><span class="checkmark"></span>
+                                  </label>
+                              </li>
+                              <li>
+                                  <label class="cb-container">
+                                      <input type="checkbox" class="specialityFilter" value="Data analyst"><span class="text-small">Data analyst</span><span class="checkmark"></span>
+                                  </label>
+                              </li>
+                              <li>
+                                  <label class="cb-container">
+                                      <input type="checkbox" class="specialityFilter" value="Cybersecurity"><span class="text-small">Cybersecurity</span><span class="checkmark"></span>
+                                  </label>
+                          </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="filter-block mb-20">
+                        <h5 class="medium-heading mb-15">Job type</h5>
+                        <div class="form-group">
+                            <ul class="list-checkbox">
+                                <li>
+                                    <label class="cb-container">
+                                        <input type="checkbox" class="jobTypeFilter" value="All"><span class="text-small">All</span><span class="checkmark"></span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="cb-container">
+                                        <input type="checkbox" class="jobTypeFilter" value="Full Time"><span class="text-small">Full Time</span><span class="checkmark"></span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="cb-container">
+                                        <input type="checkbox" class="jobTypeFilter" value="Part Time"><span class="text-small">Part Time</span><span class="checkmark"></span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="cb-container">
+                                        <input type="checkbox" class="jobTypeFilter" value="Remotely"><span class="text-small">Remotely</span><span class="checkmark"></span>
+                                    </label>
+                                </li>
+                                <li>
+                                  <label class="cb-container">
+                                      <input type="checkbox" class="jobTypeFilter" value="Contract based"><span class="text-small">Contract based</span><span class="checkmark"></span>
+                                  </label>
+                              </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+</main>
+    <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
+    <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/vendor/jquery-migrate-3.3.0.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/plugins/waypoints.js"></script>
+    <script src="assets/js/plugins/wow.js"></script>
+    <script src="assets/js/plugins/magnific-popup.js"></script>
+    <script src="assets/js/plugins/perfect-scrollbar.min.js"></script>
+    <script src="assets/js/plugins/select2.min.js"></script>
+    <script src="assets/js/plugins/isotope.js"></script>
+    <script src="assets/js/plugins/scrollup.js"></script>
+    <script src="assets/js/plugins/swiper-bundle.min.js"></script>
+    <script src="assets/js/noUISlider.js"></script>
+    <script src="assets/js/slider.js"></script>
+    <script src="assets/js/main.js?v=4.1"></script>
+
+    <script>
+      $(document).ready(function() {
+          $.ajax({
+              url: 'http://localhost/Find-job.php',
+              type: 'GET',
+              dataType: 'json',
+              success: function(response) {
+                  var jobsHtml = '';
+                  if (response.success && response.jobs) {
+                      $.each(response.jobs, function(index, job) {
+                          var maxLength = 200; 
+                          var trimmedDescription = job.JobDescription.length > maxLength ? job.JobDescription.substring(0, maxLength) + "..." : job.JobDescription;
+  
+                          // تأكد من أن `jobType` و `speciality` ليست `undefined` أو `null`
+                          var jobType = job.jobType || '';
+                          var jobSpeciality = job.Tags || '';
+  
+                          jobsHtml += '<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 jobCard" id="jobCard-' + job.JobID + '" data-location="' + job.Location + '" data-salary="' + job.Salary + '" data-degree="' + job.DegreeType + '" data-experience="' + job.Experience + '" data-date-posted="' + job.DatePosted + '" data-job-type="' + jobType + '" data-speciality="' + jobSpeciality + '">' + 
+                              '<div class="card-grid-2 hover-up">' +
+                                '<div class="card-grid-2-image-left">' +
+                                  '<div class="image-box">' +
+                                    '<img src="' + job.ImagePath + '" alt="jobBox" style="width: 52px; height: 48px;">' +
+                                  '</div>' +
+                                  '<div class="right-info">' +
+                                    '<a class="name-job" href="#' + job.company_id + '">' + job.company_name + '</a>' +
+                                    '<span class="location-small">' + job.Location + '</span>' +
+                                  '</div>' +
+                                '</div>' +
+                                '<div class="card-block-info">' +
+                                  '<h6><a href="job-details.php?id=' + job.JobID + '">' + job.Title + '</a></h6>' +
+                                  '<div class="mt-5">' +
+                                    '<span class="card-briefcase">' + job.DegreeType + '</span>' +
+                                    '<span class="card-time">' + job.DatePosted + '</span>' +
+                                  '</div>' +
+                                  '<p class="font-sm color-text-paragraph mt-15">' + trimmedDescription + '</p>' +
+                                  '<div class="mt-30">' + jobSpeciality + '</div>' +
+                                  '<div class="card-2-bottom mt-30">' +
+                                    '<div class="row">' +
+                                      '<div class="col-lg-7 col-7">' +
+                                        '<span class="card-text-price">' + job.Salary + '</span>' +
+                                        '<span class="text-muted">/SAR</span>' +
+                                      '</div>' +
+                                      '<div class="col-lg-5 col-5 text-end">' +
+                                        '<div class="btn btn-apply-now" onclick="location.href=\'job-details.html?id=' + job.JobID + '\'">Apply now</div>' +
+                                      '</div>' +
+                                    '</div>' +
+                                  '</div>' +
+                                '</div>' +
+                              '</div>' +
+                            '</div>';
+                      });
+                  } else {
+                      // عرض رسالة للمستخدم في حالة عدم وجود وظائف أو فشل الاستجابة
+                      jobsHtml = '<p>No jobs found or there was an error fetching them.</p>';
+                  }
+                  $('#jobsContainer').html(jobsHtml);
+              },
+              error: function(request, error) {
+                  alert("Request: " + JSON.stringify(request));
+              }
+          });
+      });
+      </script>
+  
+      <script>
+      $(document).ready(function() {
+          $.ajax({
+              url: 'con.php',
+              type: 'GET',
+              dataType: 'json',
+              success: function(response) {
+                  if (response.user) {
+                      $('#member_name').text(response.user.FirstName + ' ' + response.user.LastName);
+                      $('#member_role').text(response.user.Role || 'Applicant');
+                  }
+              },
+              error: function(jqXHR, textStatus, errorThrown) {
+                  console.error('Error fetching data: ' + textStatus, errorThrown);
+              }
+          });
+      }); 
+      </script>
+    <script>
+      $(document).ready(function() {
+          function applyFilters() {
+              var selectedLocation = $('#locationFilter').val();
+              var selectedSalaryRanges = $('input.salaryRangeFilter:checked').map(function() {
+                  var value = this.value;
+                  if (value === 'All') {
+                      return [[0, Infinity]]; // للتأكد من أن خيار "All" يشمل جميع النطاقات
+                  } else if (value.includes('+')) {
+                      return [[Number(value.replace('+', '')), Infinity]];
+                  } else {
+                      var range = value.split('-').map(Number);
+                      return [range];
+                  }
+              }).get();
+  
+              var selectedDegrees = $('input.degreeFilter:checked').map(function() {
+                  return this.value;
+              }).get();
+  
+              var selectedExperienceLevels = $('input.experienceLevelFilter:checked').map(function() {
+                  return this.value;
+              }).get();
+  
+              var selectedSpecialities = $('input.specialityFilter:checked').map(function() {
+                  return this.value;
+              }).get();
+  
+              var selectedDatePosted = $('input.datePostedFilter:checked').map(function() {
+                  return this.value;
+              }).get();
+  
+              var selectedJobTypes = $('input.jobTypeFilter:checked').map(function() {
+                  return this.value;
+              }).get();
+  
+              console.log('Selected Location: ', selectedLocation);
+              console.log('Selected Salary Ranges: ', selectedSalaryRanges);
+              console.log('Selected Degrees: ', selectedDegrees);
+              console.log('Selected Experience Levels: ', selectedExperienceLevels);
+              console.log('Selected Specialities: ', selectedSpecialities);
+              console.log('Selected Date Posted: ', selectedDatePosted);
+              console.log('Selected Job Types: ', selectedJobTypes);
+  
+              var jobCount = 0; // عدد الوظائف المطابقة
+  
+              $('.jobCard').each(function() {
+                  var $jobCard = $(this);
+                  var jobLocation = $jobCard.data('location');
+                  var jobSalary = parseInt($jobCard.data('salary'), 10); // تأكد من أن البيانات تحتوي على أرقام فقط
+                  var jobDegree = $jobCard.data('degree');
+                  var jobExperience = $jobCard.data('experience');
+                  var jobSpeciality = $jobCard.data('speciality');
+                  var jobDatePosted = new Date($jobCard.data('date-posted'));
+                  var jobType = $jobCard.data('job-type');
+  
+                  console.log('Job Salary:', jobSalary); // إضافة هذا السطر للتحقق من قيمة الراتب
+  
+                  var isMatch = true;
+  
+                  if (selectedLocation !== 'All' && jobLocation !== selectedLocation) {
+                      isMatch = false;
+                  }
+  
+                  if (selectedSalaryRanges.length > 0) {
+                      var salaryMatch = selectedSalaryRanges.some(function(range) {
+                          console.log('Checking salary range: ', range);
+                          if (jobSalary >= range[0] && jobSalary <= range[1]) {
+                              console.log('Salary matches range: ', range);
+                              return true;
+                          }
+                          return false;
+                      });
+                      if (!salaryMatch) {
+                          console.log('Salary does not match any range');
+                          isMatch = false;
+                      }
+                  }
+  
+                  if (selectedDegrees.length > 0 && !selectedDegrees.includes(jobDegree) && !selectedDegrees.includes("All")) {
+                      isMatch = false;
+                  }
+  
+                  if (selectedExperienceLevels.length > 0 && !selectedExperienceLevels.includes(jobExperience) && !selectedExperienceLevels.includes("All")) {
+                      isMatch = false;
+                  }
+  
+                  if (selectedSpecialities.length > 0 && !selectedSpecialities.includes(jobSpeciality) && !selectedSpecialities.includes("All")) {
+                      isMatch = false;
+                  }
+  
+                  if (selectedJobTypes.length > 0 && !selectedJobTypes.includes(jobType) && !selectedJobTypes.includes("All")) {
+                      isMatch = false;
+                  }
+  
+                  if (isMatch) {
+                      $jobCard.show();
+                      jobCount++; // زيادة عدد الوظائف المطابقة
+                  } else {
+                      $jobCard.hide();
+                  }
+              });
+  
+              // إظهار أو إخفاء رسالة "لا توجد وظائف" إذا لم تكن هناك وظائف مطابقة
+              if (jobCount === 0) {
+                  $('#noJobsMessage').show();
+              } else {
+                  $('#noJobsMessage').hide();
+              }
+          }
+  
+          $('#locationFilter').change(applyFilters);
+          $('input.salaryRangeFilter').change(applyFilters);
+          $('input.degreeFilter').change(applyFilters);
+          $('input.experienceLevelFilter').change(applyFilters);
+          $('input.specialityFilter').change(applyFilters);
+          $('input.datePostedFilter').change(applyFilters);
+          $('input.jobTypeFilter').change(applyFilters);
+  
+          $('#resetButton').click(function() {
+              $('#locationFilter').val('All');
+              $('input.salaryRangeFilter').prop('checked', false);
+              $('input.degreeFilter').prop('checked', false);
+              $('input.experienceLevelFilter').prop('checked', false);
+              $('input.specialityFilter').prop('checked', false);
+              $('input.datePostedFilter').prop('checked', false);
+              $('input.jobTypeFilter').prop('checked', false);
+              applyFilters();
+          });
+  
+          applyFilters();
+      });
+      </script>
+  
+<script>
+
+    $(document).ready(function() {
+      $.ajax({
+        url: 'con.php',
+        type: 'GET',
+        dataType: 'json',
+        success: function(response) {
+          if (response.user) {
+            $('#member_name').text(response.user.FirstName + ' ' + response.user.LastName);
+            $('#member_role').text(response.user.Role || 'Applicant');
+          }
+        },
+        error: function(jqXHR, textStatus, errorThrown) {
+          console.error('Error fetching data: ' + textStatus, errorThrown);
+        }
+      });
+    }); 
+    </script>
+
+
+<script>
+  $(document).ready(function() {
+    // وظيفة لتحديث الوظائف المعروضة بناءً على البحث
+    function updateJobsDisplay(keyword) {
+      // إخفاء جميع بطاقات الوظائف أولاً
+      $("[id^='jobCard-']").hide();
+  
+      // عرض البطاقات التي تطابق الكلمة الرئيسية
+      $("[id^='jobCard-']").filter(function() {
+        return $(this).text().toLowerCase().indexOf(keyword.toLowerCase()) !== -1;
+      }).show();
+    }
+  
+    // معالجة حدث النقر على زر البحث
+    $('.btn-find').on('click', function(e) {
+  e.preventDefault(); // منع الفورم من الإرسال
+  var keyword = $('.input-keysearch').val();
+  console.log('Search keyword is:', keyword); // إضافة هذا السطر للتحقق من الكلمة الرئيسية
+  if (keyword) {
+    $('#loading').show(); 
+    updateJobsDisplay(keyword);
+  } else {
+    alert("Please enter a search term."); // أو تعامل مع هذه الحالة بطريقة أخرى
+  }
+});
+    }) 
+     </script>
+
+<script>
+  $(document).ready(function() {
+      // استخراج الكلمة المفتاحية من الـ URL
+      var keyword = new URLSearchParams(window.location.search).get('keyword');
+  
+      if (keyword) {
+          // إدخال الكلمة المفتاحية في حقل البحث
+          $('.input-keysearch').val(keyword); // تعيين الكلمة المفتاحية في حقل البحث
+          
+          setTimeout(function() {
+            $('.btn-find').click(); // تحفيز حدث النقر بعد فترة قصيرة للتأكد من تحميل الصفحة
+          }, 100); // يمكن زيادة الوقت هنا إذا كان ذلك ضروريًا
+          // تنفيذ البحث باستخدام الكلمة المفتاحية
+          searchJobs(keyword);
+      }
+  });
+  
+  // تعريف وظيفة searchJobs
+  function searchJobs(keyword) {
+      // تنفيذ البحث بناءً على الكلمة المفتاحية
+      // ... هنا يتم تنفيذ البحث الفعلي، مثلاً تحديث العناصر في الواجهة الرسومية أو إرسال طلب إلى الخادم
+  }
+  </script>
+
+  </body>
+</html>

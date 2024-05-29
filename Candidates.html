@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="msapplication-TileColor" content="#0E0E0E">
+    <meta name="template-color" content="#0E0E0E">
+    <link rel="manifest" href="manifest.json" crossorigin>
+    <meta name="msapplication-config" content="browserconfig.xml">
+    <meta name="description" content="Index page">
+    <meta name="keywords" content="index, page">
+    <meta name="author" content="">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/template/briefcase.svg">
+    <link href="assets/css/style.css?version=4.1" rel="stylesheet">
+    <title>Trackify - Candidates</title>
+  </head>
+  <body>
+    <div id="preloader-active">
+      <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="preloader-inner position-relative">
+          <div class="text-center"><img src="assets/imgs/template/loading.gif" alt="jobBox"></div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="ModalApplyJobForm" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content apply-job-form">
+          <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="modal-body pl-30 pr-30 pt-50">
+            <div class="text-center">
+              <p class="font-sm text-brand-2">Job Application </p>
+              <h2 class="mt-10 mb-5 text-brand-1 text-capitalize">Start your career today</h2>
+              <p class="font-sm text-muted mb-30">Please fill in your information and send it to the employer.</p>
+            </div>
+            <form class="login-register text-start mt-20 pb-30" action="#">
+              <div class="form-group">
+                <label class="form-label" for="input-1">Full Name *</label>
+                <input class="form-control" id="input-1" type="text" required="" name="fullname" placeholder="Steven Job">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="input-2">Email *</label>
+                <input class="form-control" id="input-2" type="email" required="" name="emailaddress" placeholder="stevenjob@gmail.com">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="number">Contact Number *</label>
+                <input class="form-control" id="number" type="text" required="" name="phone" placeholder="(+01) 234 567 89">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="des">Description</label>
+                <input class="form-control" id="des" type="text" required="" name="Description" placeholder="Your description...">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="file">Upload Resume</label>
+                <input class="form-control" id="file" name="resume" type="file">
+              </div>
+              <div class="login_footer form-group d-flex justify-content-between">
+                <label class="cb-container">
+                  <input type="checkbox"><span class="text-small">Agree our terms and policy</span><span class="checkmark"></span>
+                </label><a class="text-muted" href="page-contact.html">Lean more</a>
+              </div>
+              <div class="form-group">
+                <button class="btn btn-default hover-up w-100" type="submit" name="login">Apply Job</button>
+              </div>
+              <div class="text-muted text-center">Do you need support? <a href="page-contact.html">Contact Us</a></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header class="header sticky-bar">
+      <div class="container">
+        <div class="main-header">
+          <div class="header-left">
+            <div class="header-logo"><a class="d-flex" href="index.html"><img alt="jobBox" src="assets/imgs/template/Logo.svg"></a></div>
+          </div>
+          <div class="header-nav">
+            <nav class="nav-main-menu">
+              <ul class="main-menu">
+                <li class="has-children"><a class="active" href="index.html">Home</a>
+                  <ul class="sub-menu">
+                    <li><a href="index.html">Home 1</a></li>
+                    <li><a href="index-2.html">Home 2</a></li>
+                    <li><a href="index-3.html">Home 3</a></li>
+                    <li><a href="index-4.html">Home 4</a></li>
+                    <li><a href="index-5.html">Home 5</a></li>
+                    <li><a href="index-6.html">Home 6</a></li>
+                  </ul>
+                </li>
+                <li class="has-children"><a href="jobs-grid.html">Find a Job</a>
+                  <ul class="sub-menu">
+                    <li><a href="jobs-grid.html">Jobs Grid</a></li>
+                    <li><a href="jobs-list.html">Jobs List</a></li>
+                    <li><a href="job-details.html">Jobs Details</a></li>
+                    <li><a href="job-details-2.html">Jobs Details 2</a></li>
+                  </ul>
+                </li>
+                <li class="has-children"><a href="companies-grid.html">Recruiters</a>
+                  <ul class="sub-menu">
+                    <li><a href="companies-grid.html">Recruiters</a></li>
+                    <li><a href="company-details.html">Company Details</a></li>
+                  </ul>
+                </li>
+                <li class="has-children"><a href="candidates-grid.html">Candidates</a>
+                  <ul class="sub-menu">
+                    <li><a href="candidates-grid.html">Candidates Grid</a></li>
+                    <li><a href="candidate-details.html">Candidate Details</a></li>
+                    <li><a href="candidate-profile.html">Candidate Profile</a></li>
+                  </ul>
+                </li>
+                <li class="has-children"><a href="blog-grid.html">Pages</a>
+                  <ul class="sub-menu">
+                    <li><a href="page-about.html">About Us</a></li>
+                    <li><a href="page-pricing.html">Pricing Plan</a></li>
+                    <li><a href="page-contact.html">Contact Us</a></li>
+                    <li><a href="page-register.html">Register</a></li>
+                    <li><a href="page-signin.html">Signin</a></li>
+                    <li><a href="page-reset-password.html">Reset Password</a></li>
+                    <li><a href="page-content-protected.html">Content Protected</a></li>
+                    <li><a href="page-404.html">404 Error</a></li>
+                  </ul>
+                </li>
+                <li class="has-children"><a href="blog-grid.html">Blog</a>
+                  <ul class="sub-menu">
+                    <li><a href="blog-grid.html">Blog Grid</a></li>
+                    <li><a href="blog-grid-2.html">Blog Grid 2</a></li>
+                    <li><a href="blog-details.html">Blog Single</a></li>
+                  </ul>
+                </li>
+                <li class="dashboard"><a href="recruiter-dashboard.html" target="_blank">Dashboard</a></li>
+              </ul>
+            </nav>
+            <div class="burger-icon burger-icon-white"><span class="burger-icon-top"></span><span class="burger-icon-mid"></span><span class="burger-icon-bottom"></span></div>
+          </div>
+          <div class="header-right">
+            <div class="block-signin">
+              
+              <div class="member-login">
+
+                <div class="info-member" style="display: flex; align-items: center;"> 
+  <img id="company_logo" style="height: 35px; width: 35px; border-radius: 50%; margin-right: 10px;" src="assets/imgs/page/dashboard/profile.png" alt="Profile Image">
+  <div>
+                  <strong id="company_name" class="color-brand-1">ahmad  salem</strong> 
+                  <div class="dropdown">
+                    <span id="member_role">Applicant</span> <!-- هنا أضفنا id="member_role" -->
+                    <ul class="dropdown-menu dropdown-menu-light dropdown-menu-end" aria-labelledby="dropdownProfile">
+                      <li><a class="dropdown-item" href="profile.html">Profiles</a></li>
+                      <li><a class="dropdown-item" href="my-resume.html">CV Manager</a></li>
+                      <li><a class="dropdown-item" href="login.html">Logout</a></li>
+                    </ul>
+                  </div>
+                </div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="mobile-header-active mobile-header-wrapper-style perfect-scrollbar">
+      <div class="mobile-header-wrapper-inner">
+        <div class="mobile-header-content-area">
+          <div class="perfect-scroll">
+            <div class="mobile-search mobile-header-border mb-30">
+              <form action="#">
+                <input type="text" placeholder="Search…"><i class="fi-rr-search"></i>
+              </form>
+            </div>
+            <div class="mobile-menu-wrap mobile-header-border">
+              <!-- mobile menu start-->
+              <nav>
+                <ul class="mobile-menu font-heading">
+                  <li class="has-children"><a class="active" href="index.html">Home</a>
+                    <ul class="sub-menu">
+                      <li><a href="index.html">Home 1</a></li>
+                      <li><a href="index-2.html">Home 2</a></li>
+                      <li><a href="index-3.html">Home 3</a></li>
+                      <li><a href="index-4.html">Home 4</a></li>
+                      <li><a href="index-5.html">Home 5</a></li>
+                      <li><a href="index-6.html">Home 6</a></li>
+                    </ul>
+                  </li>
+                  <li class="has-children"><a href="jobs-grid.html">Find a Job</a>
+                    <ul class="sub-menu">
+                      <li><a href="jobs-grid.html">Jobs Grid</a></li>
+                      <li><a href="jobs-list.html">Jobs List</a></li>
+                      <li><a href="job-details.html">Jobs Details</a></li>
+                      <li><a href="job-details-2.html">Jobs Details 2</a></li>
+                    </ul>
+                  </li>
+                  <li class="has-children"><a href="companies-grid.html">Recruiters</a>
+                    <ul class="sub-menu">
+                      <li><a href="companies-grid.html">Recruiters</a></li>
+                      <li><a href="company-details.html">Company Details</a></li>
+                    </ul>
+                  </li>
+                  <li class="has-children"><a href="candidates-grid.html">Candidates</a>
+                    <ul class="sub-menu">
+                      <li><a href="candidates-grid.html">Candidates Grid</a></li>
+                      <li><a href="candidate-details.html">Candidate Details</a></li>
+                    </ul>
+                  </li>
+                  <li class="has-children"><a href="blog-grid.html">Pages</a>
+                    <ul class="sub-menu">
+                      <li><a href="page-about.html">About Us</a></li>
+                      <li><a href="page-pricing.html">Pricing Plan</a></li>
+                      <li><a href="page-contact.html">Contact Us</a></li>
+                      <li><a href="page-register.html">Register</a></li>
+                      <li><a href="page-signin.html">Signin</a></li>
+                      <li><a href="page-reset-password.html">Reset Password</a></li>
+                      <li><a href="page-content-protected.html">Content Protected</a></li>
+                      <li><a href="page-404.html">404 Error</a></li>
+                    </ul>
+                  </li>
+                  <li class="has-children"><a href="blog-grid.html">Blog</a>
+                    <ul class="sub-menu">
+                      <li><a href="blog-grid.html">Blog Grid</a></li>
+                      <li><a href="blog-grid-2.html">Blog Grid 2</a></li>
+                      <li><a href="blog-details.html">Blog Single</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="recruiter-dashboard.html" target="_blank">Dashboard</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="mobile-account">
+              <h6 class="mb-10">Your Account</h6>
+              <ul class="mobile-menu font-heading">
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Work Preferences</a></li>
+                <li><a href="#">Account Settings</a></li>
+                <li><a href="#">Go Pro</a></li>
+                <li><a href="page-signin.html">Sign Out</a></li>
+              </ul>
+            </div>
+            <div class="site-copyright">Copyright 2022 &copy; JobBox.<br>Designed by AliThemes.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mobile-header-active mobile-header-wrapper-style perfect-scrollbar">
+      <div class="mobile-header-wrapper-inner">
+        <div class="mobile-header-content-area">
+          <div class="perfect-scroll">
+            <div class="mobile-search mobile-header-border mb-30">
+              <form action="#">
+                <input type="text" placeholder="Search…"><i class="fi-rr-search"></i>
+              </form>
+            </div>
+            <div class="mobile-menu-wrap mobile-header-border">
+              <!-- mobile menu start-->
+              <nav>
+                <ul class="mobile-menu font-heading">
+                  <li class="has-children"><a class="active" href="index.html">Home</a>
+                    <ul class="sub-menu">
+                      <li><a href="index.html">Home 1</a></li>
+                      <li><a href="index-2.html">Home 2</a></li>
+                      <li><a href="index-3.html">Home 3</a></li>
+                      <li><a href="index-4.html">Home 4</a></li>
+                      <li><a href="index-5.html">Home 5</a></li>
+                      <li><a href="index-6.html">Home 6</a></li>
+                    </ul>
+                  </li>
+                  <li class="has-children"><a href="jobs-grid.html">Find a Job</a>
+                    <ul class="sub-menu">
+                      <li><a href="jobs-grid.html">Jobs Grid</a></li>
+                      <li><a href="jobs-list.html">Jobs List</a></li>
+                      <li><a href="job-details.html">Jobs Details</a></li>
+                      <li><a href="job-details-2.html">Jobs Details 2</a></li>
+                    </ul>
+                  </li>
+                  <li class="has-children"><a href="companies-grid.html">Recruiters</a>
+                    <ul class="sub-menu">
+                      <li><a href="companies-grid.html">Recruiters</a></li>
+                      <li><a href="company-details.html">Company Details</a></li>
+                    </ul>
+                  </li>
+                  <li class="has-children"><a href="candidates-grid.html">Candidates</a>
+                    <ul class="sub-menu">
+                      <li><a href="candidates-grid.html">Candidates Grid</a></li>
+                      <li><a href="candidate-details.html">Candidate Details</a></li>
+                    </ul>
+                  </li>
+                  <li class="has-children"><a href="blog-grid.html">Pages</a>
+                    <ul class="sub-menu">
+                      <li><a href="page-about.html">About Us</a></li>
+                      <li><a href="page-pricing.html">Pricing Plan</a></li>
+                      <li><a href="page-contact.html">Contact Us</a></li>
+                      <li><a href="page-register.html">Register</a></li>
+                      <li><a href="page-signin.html">Signin</a></li>
+                      <li><a href="page-reset-password.html">Reset Password</a></li>
+                      <li><a href="page-content-protected.html">Content Protected</a></li>
+                      <li><a href="page-404.html">404 Error</a></li>
+                    </ul>
+                  </li>
+                  <li class="has-children"><a href="blog-grid.html">Blog</a>
+                    <ul class="sub-menu">
+                      <li><a href="blog-grid.html">Blog Grid</a></li>
+                      <li><a href="blog-grid-2.html">Blog Grid 2</a></li>
+                      <li><a href="blog-details.html">Blog Single</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="recruiter-dashboard.html" target="_blank">Dashboard</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="mobile-account">
+              <h6 class="mb-10">Your Account</h6>
+              <ul class="mobile-menu font-heading">
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Work Preferences</a></li>
+                <li><a href="#">Account Settings</a></li>
+                <li><a href="#">Go Pro</a></li>
+                <li><a href="page-signin.html">Sign Out</a></li>
+              </ul>
+            </div>
+            <div class="site-copyright">Copyright 2022 &copy; JobBox.<br>Designed by AliThemes.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <main class="main">
+      <section class="section-box mt-30">
+        <div class="container">
+          <div class="row flex-row-reverse">
+            <div class="col-lg-9 col-md-12 col-sm-12 col-12 float-right">
+              <div class="content-page"> 
+                <div class="box-filters-job">
+                  <div class="row">
+                    <div class="col-xl-6 col-lg-5">
+                      <select class="form-control" id="jobs" name="jobs">
+                        <option value="" selected="" disabled="">Choose From Jobs</option>
+                    </select>
+                    
+                    </div>
+                    <div class="col-md-5">
+                      <a class="btn btn-default mr-15" id="saveCandidates" href="#">Save</a>
+                      <a class="btn btn-border" href="#">Cancel</a>
+                      <a class="btn btn-default icon-edit hover-up"id="generateReportButton" href="report.php" target="_blank" style="background-image: url('http://localhost/assets/imgs/template/icons8-report-30.png'); background-repeat: no-repeat; background-position: 8px 10px; padding-left: 45px; margin-left: 9px;">Generate Report</a></div>
+                    </div>
+                </div>
+                <div class="row display-list">
+                  <div class="col-xl-12 col-12">
+                    <div class="card-grid-2 hover-up"><span class="flash"></span>
+                      <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                          <div class="card-grid-2-image-left">
+                            <div class="image-box"><img src="assets\imgs\avatar\user.jpeg" alt="jobBox"></div>
+                            <div class="right-info"><a class="name-job" href="">Jhonny depp</a><span class="location-small">Riyadh</span></div>
+                          </div>
+                        </div>
+                        <div class="col-lg-6 text-start text-md-end pr-60 col-md-6 col-sm-12">
+                          <div class="pl-15 mb-15 mt-30"><a class="btn btn-grey-small mr-5" href="#">Adobe XD</a><a class="btn btn-grey-small mr-5" href="#">Figma</a></div>
+                        </div>
+                      </div>
+                      <div class="card-block-info">
+                        <h4><a href="job-details.html">UI / UX Designer fulltime</a></h4>
+                        <div class="mt-5"><span class="card-briefcase">Fulltime</span><span class="card-time"><span>4</span><span> mins ago</span></span></div>
+                        <p class="font-sm color-text-paragraph mt-10">Bio</p>
+                        <div class="card-2-bottom mt-20">
+                          <div class="row">
+                            <div class="col-lg-7 col-7"></div>
+                            <div class="col-lg-5 col-5 text-end">
+                              <div class="btn btn-apply-now">View Profile</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-12 col-12">
+                    <div class="card-grid-2 hover-up"><span class="flash"></span>
+                      <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                          <div class="card-grid-2-image-left">
+                            <div class="image-box"><img src="assets\imgs\avatar\user.jpeg" alt="jobBox"></div>
+                            <div class="right-info"><a class="name-job" href="">Jhonny depp</a><span class="location-small">Riyadh</span></div>
+                          </div>
+                        </div>
+                        <div class="col-lg-6 text-start text-md-end pr-60 col-md-6 col-sm-12">
+                          <div class="pl-15 mb-15 mt-30"><a class="btn btn-grey-small mr-5" href="#">Adobe XD</a><a class="btn btn-grey-small mr-5" href="#">Figma</a></div>
+                        </div>
+                      </div>
+                      <div class="card-block-info">
+                        <h4><a href="job-details.html">UI / UX Designer fulltime</a></h4>
+                        <div class="mt-5"><span class="card-briefcase">Fulltime</span><span class="card-time"><span>4</span><span> mins ago</span></span></div>
+                        <p class="font-sm color-text-paragraph mt-10">Bio</p>
+                        <div class="card-2-bottom mt-20">
+                          <div class="row">
+                            <div class="col-lg-7 col-7"></div>
+                            <div class="col-lg-5 col-5 text-end">
+                              <div class="btn btn-apply-now">View Profile</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-12 col-12">
+                    <div class="card-grid-2 hover-up"><span class="flash"></span>
+                      <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                          <div class="card-grid-2-image-left">
+                            <div class="image-box"><img src="assets\imgs\avatar\user.jpeg" alt="jobBox"></div>
+                            <div class="right-info"><a class="name-job" href="">Jhonny depp</a><span class="location-small">Riyadh</span></div>
+                          </div>
+                        </div>
+                        <div class="col-lg-6 text-start text-md-end pr-60 col-md-6 col-sm-12">
+                          <div class="pl-15 mb-15 mt-30"><a class="btn btn-grey-small mr-5" href="#">Adobe XD</a><a class="btn btn-grey-small mr-5" href="#">Figma</a></div>
+                        </div>
+                      </div>
+                      <div class="card-block-info">
+                        <h4><a href="job-details.html">UI / UX Designer fulltime</a></h4>
+                        <div class="mt-5"><span class="card-briefcase">Fulltime</span><span class="card-time"><span>4</span><span> mins ago</span></span></div>
+                        <p class="font-sm color-text-paragraph mt-10">Bio</p>
+                        <div class="card-2-bottom mt-20">
+                          <div class="row">
+                            <div class="col-lg-7 col-7"></div>
+                            <div class="col-lg-5 col-5 text-end">
+                              <div class="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Apply now</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-12 col-12">
+                    <div class="card-grid-2 hover-up"><span class="flash"></span>
+                      <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                          <div class="card-grid-2-image-left">
+                            <div class="image-box"><img src="assets\imgs\avatar\user.jpeg" alt="jobBox"></div>
+                            <div class="right-info"><a class="name-job" href="">Jhonny depp</a><span class="location-small">Riyadh</span></div>
+                          </div>
+                        </div>
+                        <div class="col-lg-6 text-start text-md-end pr-60 col-md-6 col-sm-12">
+                          <div class="pl-15 mb-15 mt-30"><a class="btn btn-grey-small mr-5" href="#">Adobe XD</a><a class="btn btn-grey-small mr-5" href="#">Figma</a></div>
+                        </div>
+                      </div>
+                      <div class="card-block-info">
+                        <h4><a href="job-details.html">UI / UX Designer fulltime</a></h4>
+                        <div class="mt-5"><span class="card-briefcase">Fulltime</span><span class="card-time"><span>4</span><span> mins ago</span></span></div>
+                        <p class="font-sm color-text-paragraph mt-10">Bio</p>
+                        <div class="card-2-bottom mt-20">
+                          <div class="row">
+                            <div class="col-lg-7 col-7"></div>
+                            <div class="col-lg-5 col-5 text-end">
+                              <div class="btn btn-apply-now">View Profile</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-12 col-12">
+                    <div class="card-grid-2 hover-up"><span class="flash"></span>
+                      <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                          <div class="card-grid-2-image-left">
+                            <div class="image-box"><img src="assets\imgs\avatar\user.jpeg" alt="jobBox"></div>
+                            <div class="right-info"><a class="name-job" href="">Jhonny depp</a><span class="location-small">Riyadh</span></div>
+                          </div>
+                        </div>
+                        <div class="col-lg-6 text-start text-md-end pr-60 col-md-6 col-sm-12">
+                          <div class="pl-15 mb-15 mt-30"><a class="btn btn-grey-small mr-5" href="#">Adobe XD</a><a class="btn btn-grey-small mr-5" href="#">Figma</a></div>
+                        </div>
+                      </div>
+                      <div class="card-block-info">
+                        <h4><a href="job-details.html">UI / UX Designer fulltime</a></h4>
+                        <div class="mt-5"><span class="card-briefcase">Fulltime</span><span class="card-time"><span>4</span><span> mins ago</span></span></div>
+                        <p class="font-sm color-text-paragraph mt-10">Bio</p>
+                        <div class="card-2-bottom mt-20">
+                          <div class="row">
+                            <div class="col-lg-7 col-7"></div>
+                            <div class="col-lg-5 col-5 text-end">
+                              <div class="btn btn-apply-now">View Profile</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-12 col-12">
+                    <div class="card-grid-2 hover-up"><span class="flash"></span>
+                      <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                          <div class="card-grid-2-image-left">
+                            <div class="image-box"><img src="assets\imgs\avatar\user.jpeg" alt="jobBox"></div>
+                            <div class="right-info"><a class="name-job" href="">Jhonny depp</a><span class="location-small">Riyadh</span></div>
+                          </div>
+                        </div>
+                        <div class="col-lg-6 text-start text-md-end pr-60 col-md-6 col-sm-12">
+                          <div class="pl-15 mb-15 mt-30"><a class="btn btn-grey-small mr-5" href="#">Adobe XD</a><a class="btn btn-grey-small mr-5" href="#">Figma</a></div>
+                        </div>
+                      </div>
+                      <div class="card-block-info">
+                        <h4><a href="job-details.html">UI / UX Designer fulltime</a></h4>
+                        <div class="mt-5"><span class="card-briefcase">Fulltime</span><span class="card-time"><span>4</span><span> mins ago</span></span></div>
+                        <p class="font-sm color-text-paragraph mt-10">Bio</p>
+                        <div class="card-2-bottom mt-20">
+                          <div class="row">
+                            <div class="col-lg-7 col-7"></div>
+                            <div class="col-lg-5 col-5 text-end">
+                              <div class="btn btn-apply-now">View Profile</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-12 col-12">
+                    <div class="card-grid-2 hover-up"><span class="flash"></span>
+                      <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                          <div class="card-grid-2-image-left">
+                            <div class="image-box"><img src="assets\imgs\avatar\user.jpeg" alt="jobBox"></div>
+                            <div class="right-info"><a class="name-job" href="">Jhonny depp</a><span class="location-small">Riyadh</span></div>
+                          </div>
+                        </div>
+                        <div class="col-lg-6 text-start text-md-end pr-60 col-md-6 col-sm-12">
+                          <div class="pl-15 mb-15 mt-30"><a class="btn btn-grey-small mr-5" href="#">Adobe XD</a><a class="btn btn-grey-small mr-5" href="#">Figma</a></div>
+                        </div>
+                      </div>
+                      <div class="card-block-info">
+                        <h4><a href="job-details.html">UI / UX Designer fulltime</a></h4>
+                        <div class="mt-5"><span class="card-briefcase">Fulltime</span><span class="card-time"><span>4</span><span> mins ago</span></span></div>
+                        <p class="font-sm color-text-paragraph mt-10">Bio</p>
+                        <div class="card-2-bottom mt-20">
+                          <div class="row">
+                            <div class="col-lg-7 col-7"></div>
+                            <div class="col-lg-5 col-5 text-end">
+                              <div class="btn btn-apply-now">View Profile</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                    <div class="col-xl-12 col-12">
+                    <div class="card-grid-2 hover-up"><span class="flash"></span>
+                      <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                          <div class="card-grid-2-image-left">
+                            <div class="image-box"><img src="assets/imgs/brands/brand-8.png" alt="jobBox"></div>
+                            <div class="right-info"><a class="name-job" href="">Periscope</a><span class="location-small">New York, US</span></div>
+                          </div>
+                        </div>
+                        <div class="col-lg-6 text-start text-md-end pr-60 col-md-6 col-sm-12">
+                          <div class="pl-15 mb-15 mt-30"><a class="btn btn-grey-small mr-5" href="#">Adobe XD</a><a class="btn btn-grey-small mr-5" href="#">Figma</a></div>
+                        </div>
+                      </div>
+                      <div class="card-block-info">
+                        <h4><a href="job-details.html">Lead Quality Control QA</a></h4>
+                        <div class="mt-5"><span class="card-briefcase">Full time</span><span class="card-time"><span>6</span><span> mins ago</span></span></div>
+                        <p class="font-sm color-text-paragraph mt-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur.</p>
+                        <div class="card-2-bottom mt-20">
+                          <div class="row">
+                            <div class="col-lg-7 col-7"><span class="card-text-price">$250</span><span class="text-muted">/Hour</span></div>
+                            <div class="col-lg-5 col-5 text-end">
+                              <div class="btn btn-apply-now">View Profile</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="paginations">
+                <ul class="pager">
+                  <li><a class="pager-prev" href="#"></a></li>
+                  <li><a class="pager-number" href="#">1</a></li>
+                  <li><a class="pager-number" href="#">2</a></li>
+                  <li><a class="pager-number" href="#">3</a></li>
+                  <li><a class="pager-number" href="#">4</a></li>
+                  <li><a class="pager-number" href="#">5</a></li>
+                  <li><a class="pager-number active" href="#">6</a></li>
+                  <li><a class="pager-number" href="#">7</a></li>
+                  <li><a class="pager-next" href="#"></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-12 col-sm-12 col-12">
+              <div class="sidebar-shadow none-shadow mb-30">
+                <div class="sidebar-filters">
+                  <div class="filter-block head-border mb-30">
+                    <h5>Advance Filter <a class="link-reset" href="#">Reset</a></h5>
+                  </div>
+                  <div class="filter-block mb-30">
+                    <div class="form-group select-style select-style-icon">
+                      <select id="locationFilter" class="form-control form-icons select-active select2-hidden-accessible" data-select2-id="locationFilter" tabindex="-1" aria-hidden="true">
+                        <option data-select2-id="2">All</option>
+                        <option>Riyadh</option>
+                        <option>Jeddah</option>
+                        <option>Damam</option>
+                      </select>
+                      </div>
+                  </div>
+                  <div class="filter-block mb-20">
+                        </div>
+                  </div>
+                  <div class="filter-block mb-30">
+                    <h5 class="medium-heading mb-10">Degree</h5>
+                    <div class="form-group">
+                      <ul class="list-checkbox">
+                        <li>
+                          <label class="cb-container">
+                            <input type="checkbox" class="jobTypeFilter"><span class="text-small">All</span><span class="checkmark"></span>
+                        </label></li>
+                        <li>
+                          <label class="cb-container">
+                            <input type="checkbox" class="jobTypeFilter"><span class="text-small">Diploma</span><span class="checkmark"></span>
+                        </label></li>
+                        <li>
+                          <label class="cb-container">
+                            <input type="checkbox" class="jobTypeFilter"><span class="text-small">Bacheolar</span><span class="checkmark"></span>
+                        </label></li>
+                        <li>
+                          <label class="cb-container">
+                            <input type="checkbox" class="jobTypeFilter"><span class="text-small">Master</span><span class="checkmark"></span>
+                        </label></li>
+                        <li>
+                          <label class="cb-container">
+                            <input type="checkbox" class="jobTypeFilter"><span class="text-small">PHD</span><span class="checkmark"></span>
+                        </label></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="filter-block mb-30">
+                    <h5 class="medium-heading mb-10">Experience Level</h5>
+                    <div class="form-group">
+                      <ul class="list-checkbox">
+                        <li>
+                          <label class="cb-container">
+                            <input type="checkbox" class="jobTypeFilter"><span class="text-small">All</span><span class="checkmark"></span>
+                        </label></li>
+                        <li>
+                          <label class="cb-container">
+                            <input type="checkbox" class="jobTypeFilter"><span class="text-small">1 - 2 years</span><span class="checkmark"></span>
+                        </label></li>
+                        <li>
+                          <label class="cb-container">
+                            <input type="checkbox" class="jobTypeFilter"><span class="text-small">3 - 5 years</span><span class="checkmark"></span>
+                        </label></li>
+                        <li>
+                          <label class="cb-container">
+                            <input type="checkbox" class="jobTypeFilter"><span class="text-small">6 - 8 years</span><span class="checkmark"></span>
+                        </label></li>
+                        <li>
+                          <label class="cb-container">
+                            <input type="checkbox" class="jobTypeFilter"><span class="text-small">9 - 10 years</span><span class="checkmark"></span>
+                        </label></li>
+                        <li>
+                          <label class="cb-container">
+                            <input type="checkbox" class="jobTypeFilter"><span class="text-small">10+ years</span><span class="checkmark"></span>
+                        </label></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="filter-block mb-30">
+                    <h5 class="medium-heading mb-10">Date Posted</h5>
+                  </div>
+                  <div class="filter-block mb-20">
+                    <h5 class="medium-heading mb-15">Job type</h5>
+                    <div class="form-group">
+                      <ul class="list-checkbox">
+                        <li>
+                          <label class="cb-container">
+                            <input type="checkbox" class="jobTypeFilter"><span class="text-small">All</span><span class="checkmark"></span>
+                        </label></li>
+                        <li>
+                          <label class="cb-container">
+                            <input type="checkbox" class="jobTypeFilter"><span class="text-small">Full Time</span><span class="checkmark"></span>
+                        </label></li>
+                        <li>
+                          <label class="cb-container">
+                            <input type="checkbox" class="jobTypeFilter"><span class="text-small">Part Time</span><span class="checkmark"></span>
+                        </label></li>
+                        <li>
+                          <label class="cb-container">
+                            <input type="checkbox" class="jobTypeFilter"><span class="text-small">Remotely</span><span class="checkmark"></span>
+                        </label></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>        </div>
+      </section>
+    </main>
+    <footer class="footer mt-50">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-1 col-md-3 col-sm-12"><a href="index.html"><img alt="jobBox" src="assets/imgs/template/jobhub-logo.svg"></a>
+            <div class="mt-20 mb-20 font-xs color-text-paragraph-2">JobBox is the heart of the design community and the best resource to discover and connect with designers and jobs worldwide.</div>
+            <div class="footer-social"><a class="icon-socials icon-facebook" href="#"></a><a class="icon-socials icon-twitter" href="#"></a><a class="icon-socials icon-linkedin" href="#"></a></div>
+          </div>
+          <div class="footer-col-2 col-md-2 col-xs-6">
+            <h6 class="mb-20">Resources</h6>
+            <ul class="menu-footer">
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Our Team</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col-3 col-md-2 col-xs-6">
+            <h6 class="mb-20">Community</h6>
+            <ul class="menu-footer">
+              <li><a href="#">Feature</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Credit</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </div>
+          <div class="footer-col-4 col-md-2 col-xs-6">
+            <h6 class="mb-20">Quick links</h6>
+            <ul class="menu-footer">
+              <li><a href="#">iOS</a></li>
+              <li><a href="#">Android</a></li>
+              <li><a href="#">Microsoft</a></li>
+              <li><a href="#">Desktop</a></li>
+            </ul>
+          </div>
+          <div class="footer-col-5 col-md-2 col-xs-6">
+            <h6 class="mb-20">More</h6>
+            <ul class="menu-footer">
+              <li><a href="#">Privacy</a></li>
+              <li><a href="#">Help</a></li>
+              <li><a href="#">Terms</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </div>
+          <div class="footer-col-6 col-md-3 col-sm-12">
+            <h6 class="mb-20">Download App</h6>
+            <p class="color-text-paragraph-2 font-xs">Download our Apps and get extra 15% Discount on your first Order&mldr;!</p>
+            <div class="mt-15"><a class="mr-5" href="#"><img src="assets/imgs/template/icons/app-store.png" alt="joxBox"></a><a href="#"><img src="assets/imgs/template/icons/android.png" alt="joxBox"></a></div>
+          </div>
+        </div>
+        <div class="footer-bottom mt-50">
+          <div class="row">
+            <div class="col-md-6"><span class="font-xs color-text-paragraph">Copyright &copy; 2022. JobBox all right reserved</span></div>
+            <div class="col-md-6 text-md-end text-start">
+              <div class="footer-social"><a class="font-xs color-text-paragraph" href="#">Privacy Policy</a><a class="font-xs color-text-paragraph mr-30 ml-30" href="#">Terms &amp; Conditions</a><a class="font-xs color-text-paragraph" href="#">Security</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
+    <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/vendor/jquery-migrate-3.3.0.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/plugins/waypoints.js"></script>
+    <script src="assets/js/plugins/wow.js"></script>
+    <script src="assets/js/plugins/magnific-popup.js"></script>
+    <script src="assets/js/plugins/perfect-scrollbar.min.js"></script>
+    <script src="assets/js/plugins/select2.min.js"></script>
+    <script src="assets/js/plugins/isotope.js"></script>
+    <script src="assets/js/plugins/scrollup.js"></script>
+    <script src="assets/js/plugins/swiper-bundle.min.js"></script>
+    <script src="assets/js/noUISlider.js"></script>
+    <script src="assets/js/slider.js"></script>
+    <script src="assets/js/main.js?v=4.1"></script>
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const jobSelect = document.getElementById('jobs');
+    jobSelect.addEventListener('change', function() {
+        const jobId = this.value;
+        fetch(`candidates.php?jobID=${jobId}`)
+            .then(response => response.json())
+            .then(data => {
+                const candidatesContainer = document.querySelector('.display-list');
+                candidatesContainer.innerHTML = ''; // Clear current content
+
+                if (data.success && data.seekers.length > 0) {
+                    data.seekers.forEach(seeker => {
+                        const profilePicture = seeker.ProfilePicture || 'assets/imgs/avatar/user.jpeg';
+                        const seekerBio = seeker.Bio ? seeker.Bio.substring(0, 350) + '...' : 'No bio provided';
+                        const isSelected = localStorage.getItem('selectedCandidate_' + seeker.SeekerID) === 'true' ? 'checked' : '';
+                        const detailPageURL = `candidate-details.html?seekerId=${seeker.SeekerID}`;
+                        const seekerHtml = `
+                            <div class="col-xl-12 col-12">
+                                <div class="card-grid-2 hover-up">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-sm-12">
+                                            <div class="card-grid-2-image-left">
+                                                <div class="image-box">
+                                                    <img src="${profilePicture}" alt="${seeker.FirstName} ${seeker.LastName}" onerror="this.onerror=null;this.src='assets/imgs/avatar/user.jpeg';">
+                                                </div>
+                                                <div class="right-info">
+                                                    <a class="name-job" href="#">${seeker.FirstName} ${seeker.LastName}</a>
+                                                    <span class="location-small">${seeker.Location || 'No location specified'}</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 text-start text-md-end pr-60 col-md-6 col-sm-12">
+                                            <div class="pl-15 mb-15 mt-30">
+                                                <label class="cb-container">
+                                                    <input type="checkbox" class="jobTypeFilter" value="${seeker.SeekerID}" ${isSelected}>
+                                                    <span class="text-small">Candidate</span><span class="checkmarc"></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-block-info">
+                                        <h4><a href="job-details.html">${seeker.Speciality || 'No specialty listed'}</a></h4>
+                                        <p class="font-sm color-text-paragraph mt-10">${seekerBio}</p>
+                                        <div class="card-2-bottom mt-20">
+                                            <div class="row">
+                                                <div class="col-lg-7 col-7"></div>
+                                                <div class="col-lg-5 col-5 text-end">
+                                                    <button class="btn btn-apply-now" onclick="window.location.href='${detailPageURL}'">View Profile</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        `;
+                        candidatesContainer.innerHTML += seekerHtml;
+                    });
+                } else {
+                    candidatesContainer.innerHTML = '<p>No candidates found for this job.</p>';
+                }
+
+                // Manage candidate selection state changes
+                $('.jobTypeFilter').change(function() {
+                    const seekerID = $(this).val();
+                    const isChecked = $(this).is(':checked');
+                    localStorage.setItem('selectedCandidate_' + seekerID, isChecked);
+                });
+
+            })
+            .catch(error => {
+                console.error('Error fetching candidates:', error);
+                candidatesContainer.innerHTML = '<p>Error loading candidates. Please try again.</p>';
+            });
+    });
+});
+ </script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  fetch('Dash.php') // يجب أن تغير المسار إلى مسار API الصحيح
+    .then(response => response.json())
+    .then(data => {
+      const jobSelect = document.getElementById('jobs'); // الحصول على العنصر بالمعرف
+      if (!jobSelect) {
+        console.error('Dropdown element #jobs not found.');
+        return; // إذا لم يتم العثور على العنصر، توقف
+      }
+
+      // مسح الخيارات السابقة
+      jobSelect.innerHTML = '<option value="" disabled selected>Choose From jobs</option>';
+
+      // إضافة خيارات جديدة بناءً على البيانات المستلمة
+      data.jobs.forEach(job => {
+        const option = document.createElement('option');
+        option.value = job.JobID; // استخدام JobID كقيمة للخيار، ملاحظة حساسية الحالة
+        option.textContent = job.title; // استخدام title كنص للخيار
+        jobSelect.appendChild(option);
+      });
+    })
+    .catch(error => console.error('Failed to load job titles:', error));
+});
+  </script>
+<script>
+$(document).ready(function() {
+  function updateDashboardNumbers() {
+    $.ajax({
+      url: 'Dash.php', // Make sure this URL is correct based on the new page's location
+      type: 'GET',
+      dataType: 'json',
+      success: function(response) {
+        // Check if companyName exists in the response and update the text
+        if (response.companyName) {
+          $('#company_name').text(response.companyName);
+        }
+
+        // Check if companyLogo exists in the response and update the image source
+        if (response.companyLogo) {
+          var imagePath = response.companyLogo.replace(/\\/g, '/');
+          $('#company_logo').attr('src', imagePath);
+        } else {
+          // Set to a default image if companyLogo isn't provided
+          $('#company_logo').attr('src', 'path-to-default-image'); // Update this path to your default image path
+        }
+      },
+      error: function(jqXHR, textStatus, errorThrown) {
+        console.error('Error fetching data: ', textStatus, errorThrown);
+      }
+    });
+  }
+
+  // Call the updateDashboardNumbers function when the page is ready
+  updateDashboardNumbers();
+});
+
+</script>
+<script>
+$('#saveCandidates').click(function(e) {
+    e.preventDefault(); // منع السلوك الافتراضي للنموذج
+    var candidates = {};
+    $('.jobTypeFilter:checked').each(function() {
+        candidates[this.value] = 1; // أو أي قيمة أخرى تريد إرسالها
+    });
+
+    $.ajax({
+        type: 'POST',
+        url: 'candidates.php', // تأكد من صحة المسار
+        data: {selectedCandidates: candidates}, // تأكد من استخدام الاسم الصحيح للمتغير
+        success: function(response) {
+            console.log('Response:', response); // عرض الرد للتحقق
+        },
+        error: function(jqXHR, textStatus, errorThrown) {
+          alert('The selection has been saved successfully.');
+        }
+    });
+});
+
+
+</script>
+<script>document.getElementById('jobs').addEventListener('change', function() {
+  var jobID = this.value; // الحصول على القيمة المختارة من القائمة المنسدلة
+  fetch('candidates.php?jobID=' + jobID) // إضافة معرف الوظيفة إلى الطلب
+    .then(response => response.json())
+    .then(data => {
+      // تحديث الواجهة هنا بناءً على البيانات المسترجعة
+      console.log(data); // يمكنك استخدام هذه البيانات لتحديث الواجهة
+    })
+    .catch(error => console.error('Error:', error));
+});
+</script>
+  </body>
+</html>
+ChatGPT

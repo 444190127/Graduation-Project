@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="msapplication-TileColor" content="#0E0E0E">
+    <meta name="template-color" content="#0E0E0E">
+    <link rel="manifest" href="manifest.json" crossorigin>
+    <meta name="msapplication-config" content="browserconfig.xml">
+    <meta name="description" content="Index page">
+    <meta name="keywords" content="index, page">
+    <meta name="author" content="">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/template/briefcase.svg">
+    <link href="AAassets/css/style.css?version=4.1" rel="stylesheet">
+    <title>Recruiter - Profile</title>
+  </head>
+  <body>
+    <div id="preloader-active">
+      <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="preloader-inner position-relative">
+          <div class="text-center"><img src="assets/imgs/template/loading.gif" alt="jobBox"></div>
+        </div>
+      </div>
+    </div>
+    <header class="header sticky-bar"> 
+      <div class="container">
+        <div class="main-header">
+          <div class="header-left">
+            <div class="header-logo"><a class="d-flex" href="index.html"><img alt="jobBox" src="assets/imgs/template/Logo.svg"></a></div><span class="btn btn-grey-small ml-10">Recruiter</span>
+          </div>
+          <div class="header-search"> 
+            <div class="box-search"> 
+              <form action="">
+                <input class="form-control input-search" type="text" name="keyword" placeholder="Search">
+              </form>
+            </div>
+          </div>
+          <div class="header-menu d-none d-md-block">
+            <ul> 
+              <li>        <a href="http://wp.alithemes.com/html/jobbox/demos/index.html">Home </a></li>
+              <li> <a href="http://wp.alithemes.com/html/jobbox/demos/page-about.html">About us </a></li>
+              <li> <a href="http://wp.alithemes.com/html/jobbox/demos/page-contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="header-right">
+            <div class="block-signin"><a class="btn btn-default icon-edit hover-up" href="post-job.html">Post Job</a>
+              <div class="dropdown d-inline-block"><a class="btn btn-notify" id="dropdownNotify" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static"></a>
+                <ul class="dropdown-menu dropdown-menu-light dropdown-menu-end" aria-labelledby="dropdownNotify">
+                  <li><a class="dropdown-item active" href="#">10 notifications</a></li>
+                  <li><a class="dropdown-item" href="#">12 messages</a></li>
+                  <li><a class="dropdown-item" href="#">20 replies</a></li>
+                </ul>
+              </div>
+              <div class="member-login"><img id="company_logo" alt="" src="assets/imgs/page/dashboard/profile.png">
+                <div class="info-member"> <strong class="color-brand-1">Steven Jobs</strong>
+                  <div class="dropdown"><a class="font-xs color-text-paragraph-2 icon-down" id="dropdownProfile" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static">Recruiter</a>
+                    <ul class="dropdown-menu dropdown-menu-light dropdown-menu-end" aria-labelledby="dropdownProfile">
+                      <li><a class="dropdown-item" href="profile.html">Profiles</a></li>
+                      <li><a class="dropdown-item" href="my-resume.html">CV Manager</a></li>
+                      <li><a class="dropdown-item" href="login.html">Logout</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="burger-icon burger-icon-white"><span class="burger-icon-top"></span><span class="burger-icon-mid"></span><span class="burger-icon-bottom"></span></div>
+    <div class="mobile-header-active mobile-header-wrapper-style perfect-scrollbar">
+      <div class="mobile-header-wrapper-inner">
+        <div class="mobile-header-content-area">
+          <div class="perfect-scroll">
+            <div class="mobile-search mobile-header-border mb-30">
+              <form action="#">
+                <input type="text" placeholder="Search…"><i class="fi-rr-search"></i>
+              </form>
+            </div>
+            <div class="mobile-menu-wrap mobile-header-border">
+              <!-- mobile menu start-->
+              <nav>
+                <ul class="main-menu">
+                  <li> <a class="dashboard2" href="index.html"><img src="assets/imgs/page/dashboard/dashboard.svg" alt="jobBox"><span class="name">Dashboard</span></a>
+                  </li>
+                  <li> <a class="dashboard2" href="calendar.html"><img src="assets/imgs/page/dashboard/recruiters.svg" alt="jobBox"><span class="name">Calendar</span></a>
+                  </li>
+                  <li> <a class="dashboard2" href="candidates.html"><img src="assets/imgs/page/dashboard/candidates.svg" alt="jobBox"><span class="name">Applications</span></a>
+                  </li>
+                  <li> <a class="dashboard2" href="selected.Html"><img src="assets/imgs/page/dashboard/jobs.svg" alt="jobBox"><span class="name">Candidates</span></a>
+                  </li>
+                  <li> <a class="dashboard2 active" href="Recruiter-Profile.html"><img src="assets/imgs/page/dashboard/profiles.svg" alt="jobBox"><span class="name">Profile</span></a>
+                  </li>
+                  <li> <a class="dashboard2" href="page-signin.html"><img src="assets/imgs/page/dashboard/logout.svg" alt="jobBox"><span class="name">Logout</span></a>
+                  </li>
+                </ul>
+                      </nav>
+            </div>
+            <div class="mobile-account">
+              <h6 class="mb-10">Your Account</h6>
+              <ul class="mobile-menu font-heading">
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Work Preferences</a></li>
+                <li><a href="#">Account Settings</a></li>
+                <li><a href="#">Go Pro</a></li>
+                <li><a href="page-signin.html">Sign Out</a></li>
+              </ul>
+              <div class="mb-15 mt-15"> <a class="btn btn-default icon-edit hover-up" href="post-job.html">Post Job</a></div>
+            </div>
+            <div class="site-copyright">Copyright 2022 &copy; JobBox. <br>Designed by AliThemes.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <main class="main">
+      <div class="nav"><a class="btn btn-expanded"></a>
+        <nav class="nav-main-menu">
+          <ul class="main-menu">
+            <li> <a class="dashboard2" href="recruiter-dashboard.html"><img src="assets/imgs/page/dashboard/dashboard.svg" alt="jobBox"><span class="name">Dashboard</span></a>
+            </li>
+            <li> <a class="dashboard2" href="post-job.html"><img src="assets\imgs\template\Post.svg" alt=""><span class="name">Post Job</span></a>
+            </li>
+            <li> <a class="dashboard2" href="calendar.html"><img src="assets/imgs/page/dashboard/recruiters.svg" alt="jobBox"><span class="name">Calendar</span></a>
+            </li>
+            <li> <a class="dashboard2" href="candidates.html"><img src="assets/imgs/page/dashboard/candidates.svg" alt="jobBox"><span class="name">Applications</span></a>
+            </li>
+            <li> <a class="dashboard2" href="selected.Html"><img src="assets/imgs/page/dashboard/jobs.svg" alt="jobBox"><span class="name">Candidates</span></a>
+            </li>
+            <li> <a class="dashboard2 active" href="Recruiter-Profile.html"><img src="assets/imgs/page/dashboard/profiles.svg" alt="jobBox"><span class="name">Profile</span></a>
+            </li>
+            <li> <a class="dashboard2" href="page-signin.html"><img src="assets/imgs/page/dashboard/logout.svg" alt="jobBox"><span class="name">Logout</span></a>
+            </li>
+          </ul>
+          </nav>
+        <div class="border-bottom mb-20 mt-20"></div>
+      </div>
+      <div class="box-content">
+        <div class="box-heading">
+          <div class="box-title"> 
+            <h3 class="mb-35">Setting</h3>
+          </div>
+          <div class="box-breadcrumb"> 
+            <div class="breadcrumbs">
+              <ul> 
+                <li> <a class="icon-home" href="index.html">Admin</a></li>
+                <li><span>Setting</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row"> 
+          <div class="col-xxl-9 col-xl-8 col-lg-8">
+            <div class="section-box">
+              <form id="profileForm" action="Recruiter-Profile.php" method="POST" enctype="multipart/form-data">
+              <div class="container"> 
+                <div class="panel-white mb-30">
+                  <div class="box-padding">
+                    <h6 class="color-text-paragraph-2">Update your profile</h6>
+                    <div class="box-profile-image">
+                      <input type="file" id="company_logo_input" name="imagePath" style="display: none;" onchange="previewLogo(event)">
+                      <div class="img-profile" onclick="document.getElementById('company_logo_input').click()">
+                        <img src="assets/imgs/brands/logo.png" alt="Trackify" id="company_logo_preview">
+                      </div>
+                      <div class="info-profile">
+                        <a class="btn btn-default" onclick="document.getElementById('company_logo_input').click()">Change Logo / Brand</a>
+                        <a class="btn btn-link" onclick="removeLogo()">Delete</a>
+                      </div>
+                    </div>
+                    
+                    <script>
+                    // دالة لعرض الصورة بمجرد اختيارها
+                    function previewLogo(event) {
+                      var reader = new FileReader();
+                      reader.onload = function() {
+                        var output = document.getElementById('company_logo_preview');
+                        output.src = reader.result;
+                      };
+                      reader.readAsDataURL(event.target.files[0]);
+                    }
+                    
+                    // دالة لإزالة الصورة (اختياري)
+                    function removeLogo() {
+                      var defaultLogo = 'assets/imgs/brands/logo.png'; // حدد مسار الشعار الافتراضي
+                      document.getElementById('company_logo_preview').src = defaultLogo;
+                    }
+                    </script>
+                    
+                    <div class="row"> 
+                      <div class="col-lg-6 col-md-6">
+                        <div class="form-group mb-30"> 
+                          <label class="font-sm color-text-mutted mb-10">Company Name *</label>
+                          <input class="form-control" id="company_name" name="company_name" type="text" placeholder="Company Name">
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-6">
+                        <div class="form-group mb-30">
+                          <label class="font-sm color-text-mutted mb-10">Email *</label>
+                          <input class="form-control" id="company_email" name="company_email" type="email" placeholder="Mcdonalds@gmail.com">
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-6">
+                        <div class="form-group mb-30">
+                          <label class="font-sm color-text-mutted mb-10">Contact number</label>
+                          <input class="form-control" id="phone_number" name="phone_number" type="text" placeholder="01 - 234 567 89">
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-6">
+                        <div class="form-group mb-30">
+                          <label class="font-sm color-text-mutted mb-10">Website</label>
+                          <input class="form-control" id="website" name="website" type="url" placeholder="https://www.ksu.edu.sa">
+                        </div>
+                      </div>
+                      <div class="col-lg-12"> 
+                        <div class="form-group mb-30"> 
+                          <label class="font-sm color-text-mutted mb-10">Bio</label>
+                          <textarea class="form-control" id="bio" name="bio" rows="5">We are...</textarea>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-6">
+                        <div class="form-group mb-30"> 
+                          <label class="font-sm color-text-mutted mb-10">Experience</label>
+                          <input class="form-control" id="experience" name="experience" type="text" placeholder="1 - 5 Years">
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-6">
+                        <div class="form-group mb-30">
+                          <label class="font-sm color-text-mutted mb-10">Number of employees</label>
+                          <input class="form-control" name="num_employees" id="num_employees" type="number" placeholder="1-50 employees">
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-6">
+                        <div class="form-group mb-30">
+                          <label class="font-sm color-text-mutted mb-10">Languages</label>
+                          <input class="form-control" id="languages" name="languages" type="text" placeholder="English, French">
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-6">
+                        <div class="form-group mb-30">
+                          <label class="font-sm color-text-mutted mb-10">Categories </label>
+                          <input class="form-control" id="categories" name="categories" type="text" placeholder="UI/UX, Web Design, Brand identity">
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-6">
+                        <div class="form-group mb-30">
+                          <label class="font-sm color-text-mutted mb-10">Address</label>
+                          <input class="form-control" id="address" name="address" type="text" placeholder="123 King Fahd Road, Office 456, Riyadh, 11564, Saudi Arabia.">
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-6">
+                        <div class="form-group mb-30">
+                          <label class="font-sm color-text-mutted mb-10">Average wage </label>
+                          <input class="form-control" id="average_wage" name="average_wage" type="text" placeholder="$3500">
+                        </div>
+                      </div>
+                      <div class="col-lg-12"> 
+                        <div class="form-group mt-10">
+                          <button id="saveChanges" class="btn btn-default btn-brand icon-tick">Save Changes</button>
+                        </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        </div>
+      </div>
+    </main>
+    <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
+    <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/vendor/jquery-migrate-3.3.0.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/plugins/waypoints.js"></script>
+    <script src="assets/js/plugins/magnific-popup.js"></script>
+    <script src="assets/js/plugins/perfect-scrollbar.min.js"></script>
+    <script src="assets/js/plugins/select2.min.js"></script>
+    <script src="assets/js/plugins/swiper-bundle.min.js"></script>
+    <script src="assets/js/plugins/jquery.circliful.js"></script>
+    <script src="assets/js/main.js?v=4.1"></script>
+    <script>
+      $(document).ready(function() {
+        fetchRecruiterData();
+      
+        $('#profileForm').on('submit', function(e) {
+          e.preventDefault();
+          var formData = new FormData(this);
+          var imageFile = $('#company_logo_input')[0].files[0];
+          if (imageFile) {
+            formData.append('image', imageFile);
+          }
+          $.ajax({
+            url: 'Recruiter-Profile.php',
+            type: 'POST',
+            data: formData,
+            contentType: false,
+            processData: false,
+            success: function(response) {
+              if(response.success) {
+                alert(response.message);
+                fetchRecruiterData(); // إعادة جلب البيانات بعد التحديث
+              } else {
+                alert('Error: ' + response.message);
+              }
+            },
+            error: function(xhr, status, error) {
+              console.error(error);
+              alert('An error occurred while updating the data.');
+            }
+          });
+        });
+      });
+    
+      function fetchRecruiterData() {
+        $.ajax({
+          url: 'Recruiter-Profile.php',
+          type: 'GET',
+          dataType: 'json',
+          success: function(response) {
+            if(response.success) {
+              $('#company_name').val(response.recruiter.company_name);
+              $('#company_email').val(response.recruiter.company_email);
+              $('#phone_number').val(response.recruiter.phone_number);
+              $('#website').val(response.recruiter.website);
+              $('#bio').val(response.recruiter.bio);
+              $('#experience').val(response.recruiter.experience);
+              $('#num_employees').val(response.recruiter.num_employees);
+              $('#languages').val(response.recruiter.languages);
+              $('#categories').val(response.recruiter.categories);
+              $('#address').val(response.recruiter.address);
+              $('#average_wage').val(response.recruiter.average_wage);
+              if (response.recruiter.ImagePath) {
+                $('#company_logo_preview').attr('src', response.recruiter.ImagePath);
+              }
+              // هنا يتم تحديث اسم المستخدم الظاهر في الرأس
+              $(".color-brand-1").text(response.recruiter.company_name);
+            } else {
+              alert('Error retrieving profile data');
+            }
+          },
+          error: function(xhr, status, error) {
+            console.error(error);
+            alert('Error occurred while fetching data');
+          }
+        });
+      }
+    </script>
+
+<script>
+  $(document).ready(function() {
+    function updateDashboardNumbers() {
+      $.ajax({
+        url: 'Dash.php',
+        type: 'GET',
+        dataType: 'json',
+        success: function(response) {
+          if (response.companyLogo) {
+            var imagePath = response.companyLogo.replace(/\\/g, '/');
+            $('#company_logo').attr('src', imagePath);
+          } else {
+            $('#company_logo').attr('src', 'path-to-default-image'); // Update this path to your default image path
+          }
+        },
+        error: function(jqXHR, textStatus, errorThrown) {
+          console.error('Error fetching data: ', textStatus, errorThrown);
+        }
+      });
+    }
+      updateDashboardNumbers();
+  });
+  
+  </script>
+    </body>
+    </html>
+    

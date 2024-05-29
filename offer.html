@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="msapplication-TileColor" content="#0E0E0E">
+    <meta name="template-color" content="#0E0E0E">
+    <link rel="manifest" href="manifest.json" crossorigin>
+    <meta name="msapplication-config" content="browserconfig.xml">
+    <meta name="description" content="Index page">
+    <meta name="keywords" content="index, page">
+    <meta name="author" content="">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/template/briefcase.svg">
+    <link href="AAassets/css/style.css?version=4.1" rel="stylesheet">
+    <title>Recruiter - Profile</title>
+  </head>
+  <body>
+    <div id="preloader-active">
+      <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="preloader-inner position-relative">
+          <div class="text-center"><img src="assets/imgs/template/loading.gif" alt="jobBox"></div>
+        </div>
+      </div>
+    </div>
+    <header class="header sticky-bar"> 
+      <div class="container">
+        <div class="main-header">
+          <div class="header-left">
+            <div class="header-logo"><a class="d-flex" href="index.html"><img alt="jobBox" src="assets/imgs/template/Logo.svg"></a></div><span class="btn btn-grey-small ml-10">Recruiter</span>
+          </div>
+          <div class="header-search"> 
+            <div class="box-search"> 
+              <form action="">
+                <input class="form-control input-search" type="text" name="keyword" placeholder="Search">
+              </form>
+            </div>
+          </div>
+          <div class="header-menu d-none d-md-block">
+            <ul> 
+              <li>        <a href="http://wp.alithemes.com/html/jobbox/demos/index.html">Home </a></li>
+              <li> <a href="http://wp.alithemes.com/html/jobbox/demos/page-about.html">About us </a></li>
+              <li> <a href="http://wp.alithemes.com/html/jobbox/demos/page-contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="header-right">
+            <div class="block-signin">
+                <a class="btn btn-default icon-edit hover-up" href="post-job.html"data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">Make offer</a><a class="btn btn-default icon-edit hover-up" href="post-job.html">Post Job</a>
+                              <div class="dropdown d-inline-block"><a class="btn btn-notify" id="dropdownNotify" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static"></a>
+                                <ul class="dropdown-menu dropdown-menu-light dropdown-menu-end" aria-labelledby="dropdownNotify">
+                                  <li><a class="dropdown-item active" href="#">10 notifications</a></li>
+                                  <li><a class="dropdown-item" href="#">12 messages</a></li>
+                                  <li><a class="dropdown-item" href="#">20 replies</a></li>
+                                </ul>
+                              </div>
+                              <div class="member-login"><img id="company_logo" alt="" src="assets/imgs/page/dashboard/profile.png">
+                                <div class="info-member"> <strong class="color-brand-1">Steven Jobs</strong>
+                                  <div class="dropdown"><a class="font-xs color-text-paragraph-2 icon-down" id="dropdownProfile" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static">Recruiter</a>
+                                    <ul class="dropdown-menu dropdown-menu-light dropdown-menu-end" aria-labelledby="dropdownProfile">
+                                      <li><a class="dropdown-item" href="profile.html">Profiles</a></li>
+                                      <li><a class="dropdown-item" href="my-resume.html">CV Manager</a></li>
+                                      <li><a class="dropdown-item" href="login.html">Logout</a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="burger-icon burger-icon-white"><span class="burger-icon-top"></span><span class="burger-icon-mid"></span><span class="burger-icon-bottom"></span></div>
+    <div class="mobile-header-active mobile-header-wrapper-style perfect-scrollbar">
+      <div class="mobile-header-wrapper-inner">
+        <div class="mobile-header-content-area">
+          <div class="perfect-scroll">
+            <div class="mobile-search mobile-header-border mb-30">
+              <form action="#">
+                <input type="text" placeholder="Search…"><i class="fi-rr-search"></i>
+              </form>
+            </div>
+            <div class="mobile-menu-wrap mobile-header-border">
+              <!-- mobile menu start-->
+              <nav>
+                <ul class="main-menu">
+                  <li> <a class="dashboard2" href="index.html"><img src="assets/imgs/page/dashboard/dashboard.svg" alt="jobBox"><span class="name">Dashboard</span></a>
+                  </li>
+                  <li> <a class="dashboard2" href="candidates.html"><img src="assets/imgs/page/dashboard/candidates.svg" alt="jobBox"><span class="name">Candidates</span></a>
+                  </li>
+                  <li> <a class="dashboard2" href="my-job-grid.html"><img src="assets/imgs/page/dashboard/jobs.svg" alt="jobBox"><span class="name">My Jobs</span></a>
+                  </li>
+                  <li> <a class="dashboard2 active" href="settings.html"><img src="assets/imgs/page/dashboard/settings.svg" alt="jobBox"><span class="name">Offers</span></a>
+                  </li>
+                  <li> <a class="dashboard2" href="login.html"><img src="assets/imgs/page/dashboard/logout.svg" alt="jobBox"><span class="name">Logout</span></a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="mobile-account">
+              <h6 class="mb-10">Your Account</h6>
+              <ul class="mobile-menu font-heading">
+                <li><a href="#">Offers</a></li>
+                <li><a href="#">Work Preferences</a></li>
+                <li><a href="#">Account Settings</a></li>
+                <li><a href="#">Go Pro</a></li>
+                <li><a href="page-signin.html">Sign Out</a></li>
+              </ul>
+              <div class="mb-15 mt-15"> <a class="btn btn-default icon-edit hover-up" href="post-job.html">Post Job</a><a class="btn btn-default icon-edit hover-up" href="post-job.html">Post Job</a>
+            </div>
+            </div>
+            <div class="site-copyright">Copyright 2022 &copy; JobBox. <br>Designed by AliThemes.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <main class="main">
+      <div class="nav"><a class="btn btn-expanded"></a>
+        <nav class="nav-main-menu">
+          <ul class="main-menu">
+            <li> <a class="dashboard2" href="recruiter-dashboard.html"><img src="assets/imgs/page/dashboard/dashboard.svg" alt="jobBox"><span class="name">Dashboard</span></a>
+            </li>
+            <li> <a class="dashboard2" href="candidates.html"><img src="assets/imgs/page/dashboard/candidates.svg" alt="jobBox"><span class="name">Candidates</span></a>
+            </li>
+            <li> <a class="dashboard2" href="my-job-grid.html"><img src="assets/imgs/page/dashboard/jobs.svg" alt="jobBox"><span class="name">My Jobs</span></a>
+            </li>
+            <li> <a class="dashboard2 active" href="settings.html"><img src="assets/imgs/page/dashboard/settings.svg" alt="jobBox"><span class="name">Profile</span></a>
+            </li>
+            <li> <a class="dashboard2" href="login.html"><img src="assets/imgs/page/dashboard/logout.svg" alt="jobBox"><span class="name">Logout</span></a>
+            </li>
+          </ul>
+        </nav>
+        <div class="border-bottom mb-20 mt-20"></div>
+      </div>
+      <div class="box-content">
+        <div class="box-heading">
+          <div class="box-title"> 
+            <h3 class="mb-35">Offers</h3>
+          </div>
+          <div class="box-breadcrumb"> 
+            <div class="breadcrumbs">
+              <ul> 
+                <li> <a class="icon-home" href="index.html">Admin</a></li>
+                <li><span>Setting</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row"> 
+            <div class="col-xxl-9 col-xl-8 col-lg-8">
+                <div class="section-box">
+                <div class="container"> 
+                  <div class="panel-white">
+                    <div class="panel-head"> 
+                      <h5>Latest Jobs</h5><a class="menudrop" id="dropdownMenu3" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static"></a>
+                      <ul class="dropdown-menu dropdown-menu-light dropdown-menu-end" aria-labelledby="dropdownMenu3">
+                        <li><a class="dropdown-item active" href="#">Add new</a></li>
+                        <li><a class="dropdown-item" href="#">Settings</a></li>
+                        <li><a class="dropdown-item" href="#">Actions</a></li>
+                      </ul>
+                    </div>
+                    <div class="panel-body">
+                      <div id="latest-jobs-container">
+                      <div class="card-style-2 hover-up" id="job1">
+                        <div class="card-head">
+                          <div class="card-image">
+                            <img id="job1-logo" src="Aassets/imgs/page/dashboard/img1.png" alt="jobBox">
+                          </div>
+                          <div class="card-title">
+                            <h6>Loading...</h6><span class="location">Loading...</span><span class="job-type"> Loading...</span><span class="time-post"> Loading...</span>
+                          </div>
+                        </div>
+                        <div class="card-tags"> <a class="btn btn-tag">Figma</a><a class="btn btn-tag">Adobe XD</a>
+                        </div>
+                        <div class="card-price"><strong style="color: #0BA02C;">Loading...</strong></div>
+                      </div>
+                      <div class="card-style-2 hover-up">
+                        <div class="card-head">
+                          <div class="card-image"> <img src="Aassets/imgs/page/dashboard/img2.png" alt="jobBox"></div>
+                          <div class="card-title"> 
+                            <h6 id="job1-title">Loading..</h6>
+                            <span id="job1-location" class="location">Loading..</span><span class="job-type"> Loading..</span><span class="time-post">3mins ago</span>
+                          </div>
+                        </div>
+                        <div class="card-tags">
+                          <a class="btn btn-tag">Figma</a><a class="btn btn-tag">Adobe XD</a><a class="btn btn-tag">PSD</a>
+                        </div>
+                        <div class="card-price">
+                          <strong style="color: #0BA02C;">Loading...</strong>
+                        </div>
+                      </div>
+                      <div class="card-style-2 hover-up">
+                        <div class="card-head">
+                          <div class="card-image"> <img src="Aassets/imgs/page/dashboard/img3.png" alt="jobBox"></div>
+                          <div class="card-title"> 
+                            <h6>Loading..</h6><span class="location">Loading..,</span><span class="job-type">Loading...</span><span class="time-post">3mins ago</span>
+                          </div>
+                        </div>
+                        <div class="card-tags"> <a class="btn btn-tag">Loading...</a><a class="btn btn-tag">Loading...</a><a class="btn btn-tag">PSD</a>
+                        </div>
+                        <div class="card-price"><strong style="color: #FF0000;">Loading...</strong></div>
+                      </div>
+                      <div class="card-style-2 hover-up">
+                        <div class="card-head">
+                          <div class="card-image"> <img src="Aassets/imgs/page/dashboard/img4.png" alt="jobBox"></div>
+                          <div class="card-title"> 
+                            <h6>Loading...</h6><span class="location">Loading...</span><span class="job-type"> Loading...</span><span class="time-post">Loading.. </span>
+                          </div>
+                        </div>
+                        <div class="card-tags"> <a class="btn btn-tag">Loading...</a><a class="btn btn-tag">Loading...</a><a class="btn btn-tag">Loading..</a>
+                        </div>
+                        <div class="card-price"><strong style="color: #FF0000;">Loading...</strong></div>
+                      </div>
+                      <div class="card-style-2 hover-up">
+                        <div class="card-head">
+                          <div class="card-image"> <img src="Aassets/imgs/page/dashboard/img5.png" alt="jobBox"></div>
+                          <div class="card-title"> 
+                            <h6>Loading...</h6><span class="location">Loading...</span><span class="job-type"> Loading...</span><span class="time-post">Loading... </span>
+                          </div>
+                        </div>
+                        <div class="card-tags"> <a class="btn btn-tag">Loading..</a><a class="btn btn-tag">Loading.. </a><a class="btn btn-tag">Loading..</a>
+                        </div>
+                        <div class="card-price"><strong style="color: #FF0000;">Loading..</strong></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+              </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        </div>
+      </div>
+    </main>
+    <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
+    <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/vendor/jquery-migrate-3.3.0.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/plugins/waypoints.js"></script>
+    <script src="assets/js/plugins/magnific-popup.js"></script>
+    <script src="assets/js/plugins/perfect-scrollbar.min.js"></script>
+    <script src="assets/js/plugins/select2.min.js"></script>
+    <script src="assets/js/plugins/swiper-bundle.min.js"></script>
+    <script src="assets/js/plugins/jquery.circliful.js"></script>
+    <script src="assets/js/main.js?v=4.1"></script>
+<script>
+  $(document).ready(function() {
+    function updateDashboardNumbers() {
+      $.ajax({
+        url: 'Dash.php',
+        type: 'GET',
+        dataType: 'json',
+        success: function(response) {
+          if (response.companyLogo) {
+            var imagePath = response.companyLogo.replace(/\\/g, '/');
+            $('#company_logo').attr('src', imagePath);
+          } else {
+            $('#company_logo').attr('src', 'path-to-default-image'); // Update this path to your default image path
+          }
+        },
+        error: function(jqXHR, textStatus, errorThrown) {
+          console.error('Error fetching data: ', textStatus, errorThrown);
+        }
+      });
+    }
+      updateDashboardNumbers();
+  });
+  
+  </script>
+    </body>
+    </html>
+    
